@@ -5,3 +5,4 @@ r_dir_file(system_app, sysfs_device_type)
 
 get_prop(system_app, hwc_prop)
 
+allow system_app wificond:binder call;
