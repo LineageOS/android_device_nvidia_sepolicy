@@ -4,3 +4,5 @@ r_dir_file(system_app, sysfs_class_extcon)
 r_dir_file(system_app, sysfs_device_platform)
 r_dir_file(system_app, sysfs_device_type)
 r_dir_file(system_app, sysfs_extcon_name)
+
+allow system_app wificond:binder call;
