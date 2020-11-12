@@ -28,3 +28,5 @@ allow bootanim ashmem_device:chr_file execute;
 ')
 
 dontaudit bootanim tmpfs:file { read write execute };
+
+get_prop(bootanim, userspace_reboot_exported_prop);
