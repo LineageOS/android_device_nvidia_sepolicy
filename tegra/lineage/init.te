@@ -7,6 +7,9 @@ allow init sysfs_block:lnk_file r_file_perms;
 allow init sysfs_board:file r_file_perms;
 allow init sysfs_board:lnk_file r_file_perms;
 allow init sysfs_mmc_host:file {r_file_perms setattr};
+allow init sysfs_power_supply:file r_file_perms;
 allow init sysfs_usermodehelper:file r_file_perms;
+
+allow init hal_health_default_exec:file execute;
 
 allow init self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
