@@ -1,2 +1,5 @@
 get_prop(priv_app, hwc_prop)
 
+# MediaShell
+allow priv_app proc_net:file r_file_perms;
+
