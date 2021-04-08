@@ -1,0 +1,2 @@
+# Netflix (and other L1 apps)
+get_prop(untrusted_app, hwc_prop)
