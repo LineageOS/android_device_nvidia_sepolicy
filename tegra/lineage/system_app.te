@@ -1,1 +1,5 @@
 allow system_app wificond:binder call;
+
+# tvsettings
+get_prop(system_app, hwc_prop)
+allow system_app selinuxfs:file r_file_perms;
