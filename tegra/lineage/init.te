@@ -3,8 +3,11 @@ allow init mediadrmserver:binder call;
 
 allow init proc_wmem_max_writable:file r_file_perms;
 allow init sysfs_mmc_host:file {r_file_perms setattr};
+allow init sysfs_power_supply:file r_file_perms;
 allow init sysfs_usermodehelper:file r_file_perms;
 r_dir_file(init, sysfs_block)
 r_dir_file(init, sysfs_board)
+
+allow init hal_health_default_exec:file execute;
 
 allow init self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
