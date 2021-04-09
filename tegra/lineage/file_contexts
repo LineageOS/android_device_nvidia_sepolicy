@@ -26,3 +26,9 @@
 # Prebuilt HALs
 /(vendor|system/vendor)/lib(64)?/hw/audio\.primary\.tegra\.so                       u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/sound_trigger\.primary\.tegra\.so               u:object_r:same_process_hal_file:s0
+
+# Sysfs paths
+/sys/firmware/devicetree/base/chosen/plugin-manager/cvm                             u:object_r:sysfs_board:s0
+/sys/firmware/devicetree/base/chosen/proc-board/id                                  u:object_r:sysfs_board:s0
+/sys/firmware/devicetree/base/chosen/proc-board/name                                u:object_r:sysfs_board:s0
+/sys/firmware/devicetree/base/chosen/proc-board/sku                                 u:object_r:sysfs_board:s0
