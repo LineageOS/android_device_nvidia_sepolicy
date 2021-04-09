@@ -1,1 +1,8 @@
 get_prop(priv_app, hwc_prop)
+
+allow priv_app proc_interrupts:file r_file_perms;
+allow priv_app proc_net:file r_file_perms;
+allow priv_app proc_pci:file r_file_perms;
+allow priv_app sysfs_android_usb:file r_file_perms;
+allow priv_app zygote:dir r_dir_perms;
+r_dir_file(priv_app, sysfs_block)
