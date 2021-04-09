@@ -5,4 +5,5 @@ allow init sysfs_block:dir r_dir_perms;
 allow init sysfs_block:lnk_file r_file_perms;
 allow init sysfs_board:file r_file_perms;
 allow init sysfs_board:lnk_file r_file_perms;
+allow init sysfs_mmc_host:file {r_file_perms setattr};
 allow init sysfs_usermodehelper:file r_file_perms;
