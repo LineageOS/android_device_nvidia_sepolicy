@@ -1,5 +1,7 @@
 get_prop(priv_app, hwc_prop)
 
+allow priv_app proc_interrupts:file r_file_perms;
+
 # MediaShell
 allow priv_app proc_net:file r_file_perms;
 
