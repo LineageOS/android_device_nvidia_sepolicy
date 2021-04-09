@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# BCM Wi-Fi
+/sys/firmware/devicetree/base/bcmdhd_wlan/status                                 u:object_r:sysfs_wlan_fwpath:s0
+
 # DRM
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.clearkey        u:object_r:hal_drm_clearkey_exec:s0
 
