@@ -1,3 +1,6 @@
+binder_call(init, hwservicemanager)
+allow init mediadrmserver:binder call;
+
 allow init proc_wmem_max_writable:file r_file_perms;
 allow init sysfs_mmc_host:file {r_file_perms setattr};
 allow init sysfs_power_supply:file r_file_perms;
