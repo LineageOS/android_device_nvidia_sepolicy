@@ -1,3 +1,4 @@
+allow init hwservicemanager:binder {call transfer};
 allow init mediadrmserver:binder call;
 
 allow init proc_wmem_max_writable:file r_file_perms;
