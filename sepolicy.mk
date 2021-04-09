@@ -19,7 +19,8 @@ BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
 LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
 
 ifeq ($(TARGET_TEGRA_VERSION), t210)
-BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/common
+BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/t210/common
+LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/lineage
 else ifneq ($(filter $(TARGET_TEGRA_VERSION), t186 t194),)
 BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common
 endif
@@ -27,3 +28,4 @@ endif
 ifneq ($(LINEAGE_BUILD),)
 BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
 endif
+
