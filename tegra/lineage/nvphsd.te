@@ -1,1 +1,3 @@
 get_prop(nvphsd, hwc_prop)
+get_prop(nvphsd, powerhal_prop)
+get_prop(nvphsd, power_hint_prop)
