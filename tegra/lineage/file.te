@@ -1,1 +1,2 @@
+type proc_pci, proc_type, fs_type;
 type sysfs_board, sysfs_type, fs_type;
