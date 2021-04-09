@@ -1,1 +1,2 @@
 get_prop(hal_graphics_allocator_default, hwc_prop)
+get_prop(hal_graphics_allocator_default, tegra_graphics_prop)
