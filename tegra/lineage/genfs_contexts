@@ -1,3 +1,6 @@
+# Proc nodes
+genfscon proc /proc/bus/pci/devices                                                            u:object_r:proc_pci:s0
+
 # Sysfs nodes
 genfscon sysfs /sys/firmware/devicetree/base/chosen/proc-board/id                              u:object_r:sysfs_board:s0
 
