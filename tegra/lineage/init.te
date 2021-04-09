@@ -1,3 +1,4 @@
+allow init hwservicemanager:binder {call transfer};
 allow init mediadrmserver:binder call;
 allow init sysfs_block:dir r_dir_perms;
 allow init sysfs_block:lnk_file r_file_perms;
