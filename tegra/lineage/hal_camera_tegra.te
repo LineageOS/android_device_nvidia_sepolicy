@@ -1,0 +1,1 @@
+get_prop(hal_camera_tegra, tegra_graphics_prop)
