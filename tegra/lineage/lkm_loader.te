@@ -1,0 +1,1 @@
+allow lkm_loader sysfs_wlan_fwpath:file r_file_perms;
