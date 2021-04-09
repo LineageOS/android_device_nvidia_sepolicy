@@ -1,2 +1,3 @@
 get_prop(zygote, hwc_prop)
 get_prop(zygote, tegra_graphics_prop)
+get_prop(zygote, vendor_debug_prop)
