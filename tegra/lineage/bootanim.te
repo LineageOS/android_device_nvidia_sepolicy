@@ -1,1 +1,3 @@
 get_prop(bootanim, hwc_prop)
+get_prop(bootanim, tegra_graphics_prop)
+get_prop(bootanim, vendor_debug_prop)
