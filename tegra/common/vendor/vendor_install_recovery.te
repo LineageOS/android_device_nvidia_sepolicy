@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dontaudit install_recovery self:capability dac_read_search;
+dontaudit vendor_install_recovery self:capability dac_read_search;
