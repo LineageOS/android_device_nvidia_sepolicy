@@ -22,6 +22,8 @@ ifeq ($(TARGET_TEGRA_VERSION), t210)
 BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/common
 else ifeq ($(TARGET_TEGRA_VERSION), t186)
 BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common
+else ifeq ($(TARGET_TEGRA_VERSION), t194)
+BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t194/common
 endif
 
 ifneq ($(LINEAGE_BUILD),)
