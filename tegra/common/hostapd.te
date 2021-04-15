@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2014-2015, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+# Allow hostapd to access symlinks created by wifi_loader
+allow hal_wifi_hostapd_default wifi_data_file:lnk_file read;
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+#allow hostapd to access sysfs_netcfg and sysfs_mmc_host
+r_dir_file(hal_wifi_hostapd_default, sysfs_netcfg)
+r_dir_file(hal_wifi_hostapd_default, sysfs_mmc_host)

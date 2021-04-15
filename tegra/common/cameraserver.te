@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2016-2018, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+get_prop(cameraserver, vendor_camera_prop)
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+# cameraserver wants to access nvmap through libEGL.so
+allow cameraserver gpu_device:chr_file rw_file_perms;
+
+# cameraserver may want to access factory_file
+r_dir_file(cameraserver, factory_file)
+
+# Allow to write to nvfeedback log file
+allow cameraserver anr_data_file:file write;
+
+# cameraserver wants to access libnvgr.so through libvulkan.so
+allow cameraserver same_process_hal_file:file { execute getattr open read };

@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+type hal_bluetooth_tegra, domain;
+hal_server_domain(hal_bluetooth_tegra, hal_bluetooth)
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+type hal_bluetooth_tegra_exec, exec_type, file_type, vendor_file_type;
+init_daemon_domain(hal_bluetooth_tegra)
+
+# allow bluetoothhal to find service through service manager
+allow hal_bluetooth_tegra nvphsd_hwservice:hwservice_manager find;
+
+r_dir_file(hal_bluetooth_tegra, factory_file)
+
+r_dir_file(hal_bluetooth_tegra, mnt_vendor_file)
+
+set_prop(hal_bluetooth_tegra, vendor_bt_prop)

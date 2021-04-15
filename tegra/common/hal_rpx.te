@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+type hal_rpx_default, domain;
+hal_server_domain(hal_rpx_default, hal_rpx)
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+type hal_rpx_default_exec, file_type, exec_type, vendor_file_type;
+init_daemon_domain(hal_rpx_default)
+
+# HwBinder IPC from client to server, and callbacks
+binder_call(hal_rpx_client, hal_rpx_server)
+binder_call(hal_rpx_server, hal_rpx_client)
+
+add_hwservice(hal_rpx_server, hal_rpx_hwservice)
+allow hal_rpx_client hal_rpx_hwservice:hwservice_manager find;

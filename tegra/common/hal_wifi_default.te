@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+# allow default hal to access wifi vendor firmware file
+allow hal_wifi_default vendor_firmware_wifi_file:file r_file_perms;
+allow hal_wifi_default sysfs_brcmfmac_fwpath:file rw_file_perms;
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+# allow kernel to read WiFi firmware
+allow kernel vendor_firmware_wifi_file:file r_file_perms;
+
+#Allow access to file /mnt/factory/wifi/wifi_mac.txt
+r_dir_file(hal_wifi_default, factory_file)

@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2016, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+hal_client_domain(mediacodec, hal_graphics_mempool)
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+r_dir_file(mediacodec, sysfs)
+r_dir_file(mediacodec, sysfs_soc)
+
+allow mediacodec system_file:dir { open read };
+hal_client_domain(mediacodec, hal_power)
+allow_use_phs(mediacodec)
+allow mediacodec nvphsd_hwservice:hwservice_manager find;
+allow mediacodec system_server:fifo_file { append write };

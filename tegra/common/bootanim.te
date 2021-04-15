@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2014-2017, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+hal_client_domain(bootanim, hal_cplservice)
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+# Need executable memory to have better performance
+allow bootanim self:process execmem;
+
+# Allow GL to access ptimer_scale_factor
+allow bootanim sysfs_gpu:file r_file_perms;
+
+# Allow running bootanim with the OpenGL ES1 SW renderer (libGLES_android)
+# in pre-silicon and bringup testing.
+userdebug_or_eng(`
+allow bootanim ashmem_device:chr_file execute;
+')

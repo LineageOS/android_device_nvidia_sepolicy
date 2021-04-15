@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2017, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+# allow backlight HAL to adjust lcd panel brightness
+allow hal_light_default sysfs_class_backlight:file  rw_file_perms;
+allow hal_light_default sysfs_class_backlight:dir  r_dir_perms;
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+# allow backlight HAL to read/write below backlight I2C bus node
+# e.x /sys/devices/(*).i2c/i2c-(*)/backlight/pwm-backlight/brightness
+allow hal_light_default sysfs_nvi2c:file  rw_file_perms;
+allow hal_light_default sysfs_nvi2c:dir  r_dir_perms;
