@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2017-2018, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +11,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
 #
+# hal_gnss_default
+#
+allow hal_gnss_default gps_device:chr_file rw_file_perms;
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+# to communicate to other vendor components via /dev/vndbinder
+allow hal_gnss_default vndbinder_device:chr_file rw_file_perms;
 
-ifeq ($(TARGET_TEGRA_VERSION), t210)
-BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/common
-else ifeq ($(TARGET_TEGRA_VERSION), t186)
-BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common
-endif
+# to read ro.hardware.gps property
+get_prop(hal_gnss_default, gpsd_prop);
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+# to search file in  /sys/class/gpio
+allow hal_gnss_default sysfs_gpio:dir search;

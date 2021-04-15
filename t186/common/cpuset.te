@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2017-2018, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +11,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+type cpuset, domain;
+type cpuset_exec, exec_type, file_type, vendor_file_type;
 
-ifeq ($(TARGET_TEGRA_VERSION), t210)
-BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/common
-else ifeq ($(TARGET_TEGRA_VERSION), t186)
-BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common
-endif
+init_daemon_domain(cpuset)
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+allow cpuset vendor_shell_exec:file { rx_file_perms };
+allow cpuset vendor_toolbox_exec:file rx_file_perms;
+
+allow cpuset cgroup:file { read };
+# add kmsg access permission to log cpuset status
+allow cpuset kmsg_device:chr_file { w_file_perms };
+
+

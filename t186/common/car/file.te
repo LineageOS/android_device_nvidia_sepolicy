@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (c) 2016-2017, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +11,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+# /sys/devices/.*/power/wakeup
+type sysfs_power_wakeup, fs_type, sysfs_type;
 
-ifeq ($(TARGET_TEGRA_VERSION), t210)
-BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/common
-else ifeq ($(TARGET_TEGRA_VERSION), t186)
-BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common
-endif
+# /sys/class/tegra_hv
+type sysfs_tegra_hv, fs_type, sysfs_type;
 
-ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
-endif
+# /sys/firmware/devicetree/base/xudc@3550000
+type sysfs_devicetree_xudc, fs_type, sysfs_type;
+
+# /sys/devices/18000000.vgpu/devfreq/18000000.vgpu
+type sysfs_vgpu_devfreq, fs_type, sysfs_type;
+
+# /data/misc/ethernet
+type ethernet_data_file, file_type, data_file_type;
