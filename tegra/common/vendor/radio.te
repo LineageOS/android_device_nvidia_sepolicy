@@ -15,8 +15,5 @@
 # Allow radio to access system app services using service manager
 allow radio system_app_service:service_manager find;
 
-# Allow radio to access mediacodec services using service manager
-allow radio mediacodec_service:service_manager find;
-
 # allow to write to nvfeedback.log
 allow radio anr_data_file:file write;

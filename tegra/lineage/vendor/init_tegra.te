@@ -3,7 +3,7 @@ type init_tegra_exec, file_type, exec_type, vendor_file_type;
 
 init_daemon_domain(init_tegra)
 
-set_prop(init_tegra, ota_prop)
+set_prop(init_tegra, vendor_ota_prop)
 
 set_prop(init_tegra, vendor_usb_prop)
 set_prop(init_tegra, vendor_model_prop)

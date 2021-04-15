@@ -23,7 +23,6 @@ net_domain(hubcore)
 binder_service(hubcore)
 wakelock_use(hubcore)
 hwbinder_use(hubcore)
-get_prop(hubcore, net_dns_prop)
 
 # hubcore has its data files tagged with hubcore_data_file context which reside
 # under /data/misc/smartthings. This grants its permissions for that
