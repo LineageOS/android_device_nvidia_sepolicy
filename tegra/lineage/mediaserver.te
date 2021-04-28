@@ -1,1 +1,2 @@
 get_prop(mediaserver, hwc_prop)
+get_prop (mediaserver, tegra_graphics_prop)
