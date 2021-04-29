@@ -1,3 +1,6 @@
+get_prop(priv_app, audiohal_prop)
+get_prop(priv_app, apexd_prop)
+
 allow priv_app proc_interrupts:file r_file_perms;
 allow priv_app proc_net:file r_file_perms;
 allow priv_app proc_pci:file r_file_perms;
