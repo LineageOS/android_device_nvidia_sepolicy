@@ -1,3 +1,5 @@
+get_prop(priv_app, audiohal_prop)
+get_prop(priv_app, apexd_prop)
 get_prop(priv_app, hwc_prop)
 
 allow priv_app hal_memtrack_default:binder call;
