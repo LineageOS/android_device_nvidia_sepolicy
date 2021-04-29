@@ -20,3 +20,10 @@ r_dir_file(vendor_init, sysfs_power_supply)
 r_dir_file(vendor_init, sysfs_pwm_fan)
 r_dir_file(vendor_init, sysfs_sound)
 r_dir_file(vendor_init, sysfs_thermal)
+
+allow vendor_init sysfs_audio:dir relabelfrom;
+allow vendor_init sysfs_audio:file relabelfrom;
+allow vendor_init sysfs_bus_usb:file relabelto;
+allow vendor_init sysfs_bus_usb:lnk_file relabelto;
+allow vendor_init sysfs_ethernet_power:file relabelto;
+allow vendor_init sysfs_nvi2c:lnk_file relabelto;
