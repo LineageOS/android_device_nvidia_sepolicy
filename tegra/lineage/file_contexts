@@ -38,6 +38,8 @@
 /(vendor|system/vendor)/lib(64)?/hw/sound_trigger\.primary\.tegra\.so               u:object_r:same_process_hal_file:s0
 
 # Sysfs paths
+/sys/devices/7000c400.i2c/i2c-1/1-0040(/.*)?                                        u:object_r:sysfs_nvi2c:s0
+/sys/devices/hda_pcm_map                                                            u:object_r:sysfs_audio:s0
 /sys/firmware/devicetree/base/chosen/plugin-manager/cvm                             u:object_r:sysfs_board:s0
 /sys/firmware/devicetree/base/chosen/proc-board/id                                  u:object_r:sysfs_board:s0
 /sys/firmware/devicetree/base/chosen/proc-board/name                                u:object_r:sysfs_board:s0

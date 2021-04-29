@@ -5,6 +5,8 @@ genfscon proc /sys/vm/legacy_va_layout                                          
 genfscon proc /sys/vm/min_free_kbytes                                                     u:object_r:proc_min_free_kbytes:s0
 
 # Sysfs nodes
+genfscon sysfs /devices/7000c400.i2c/i2c-1/1-0040/driver                                   u:object_r:sysfs_nvi2c:s0
+genfscon sysfs /devices/hda_pcm_map                                                        u:object_r:sysfs_audio:s0
 genfscon sysfs /firmware/devicetree/base/chosen/plugin-manager/cvm                         u:object_r:sysfs_board:s0
 genfscon sysfs /firmware/devicetree/base/chosen/proc-board/id                              u:object_r:sysfs_board:s0
 genfscon sysfs /firmware/devicetree/base/chosen/proc-board/name                            u:object_r:sysfs_board:s0
