@@ -1,0 +1,1 @@
+allow hal_cplservice_default socket_device:sock_file {create setattr unlink rw_file_perms};
