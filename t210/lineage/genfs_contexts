@@ -1,0 +1,2 @@
+# Ethernet power
+genfscon sysfs /kernel/rt8168_power/mode           u:object_r:sysfs_ethernet_power:s0
