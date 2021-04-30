@@ -21,6 +21,9 @@ get_prop(domain, surfaceflinger_prop)
 get_prop(domain, hwc_prop)
 get_prop(domain, tegra_graphics_prop)
 
+# Allow all domains to read vendor debug properties
+get_prop(domain, vendor_debug_prop)
+
 # Allow domains to search for debugfs_clock/debugfs_edp
 allow domain debugfs_clock:dir search;
 allow domain debugfs_edp:dir search;
