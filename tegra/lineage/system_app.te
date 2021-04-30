@@ -6,5 +6,7 @@ r_dir_file(system_app, sysfs_device_type)
 r_dir_file(system_app, sysfs_extcon_name)
 
 get_prop(system_app, hwc_prop)
+get_prop(system_app, tegra_graphics_prop)
+get_prop(system_app, vendor_debug_prop)
 
 allow system_app wificond:binder call;
