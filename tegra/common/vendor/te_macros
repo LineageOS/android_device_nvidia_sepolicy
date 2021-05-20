@@ -25,7 +25,7 @@ define(`allow_use_phs', `
     allow nvphsd $1:process signull;
 ')
 
-define(`r_file_perms_no_ioctl', `{ getattr open read map watch watch_reads }')
+define(`r_file_perms_no_ioctl', `{ getattr open read map }')
 define(`rw_file_perms_no_ioctl', `{ r_file_perms_no_ioctl w_file_perms }')
 
 define(`rw_stream_socket_perms_no_ioctl', `{ rw_socket_perms_no_ioctl listen accept }')
