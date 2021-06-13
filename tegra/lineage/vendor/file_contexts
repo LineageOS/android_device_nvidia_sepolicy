@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# BCM Wi-Fi
-/sys/firmware/devicetree/base/bcmdhd_wlan/status                                 u:object_r:sysfs_wlan_fwpath:s0
-
 # Data files - TEE
 /data/ss(/.*)?                                                                   u:object_r:tlk_data_file:s0
 /data/tlk(/.*)?                                                                  u:object_r:tlk_data_file:s0
