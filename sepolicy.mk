@@ -15,17 +15,17 @@
 #
 
 # Common tegra policy
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage
+BOARD_VENDOR_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common/vendor
+LINEAGE_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage/vendor
 
 ifeq ($(TARGET_TEGRA_VERSION), t210)
-BOARD_SEPOLICY_DIRS   += device/nvidia/sepolicy/t210/common
-LINEAGE_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/lineage
+BOARD_VENDOR_SEPOLICY_DIRS   += device/nvidia/sepolicy/t210/common/vendor
+LINEAGE_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/lineage/vendor
 else ifneq ($(filter $(TARGET_TEGRA_VERSION), t186 t194),)
-BOARD_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common
+BOARD_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common/vendor
 endif
 
 ifneq ($(LINEAGE_BUILD),)
-BOARD_SEPOLICY_DIRS += $(LINEAGE_SEPOLICY_DIRS)
+BOARD_VENDOR_SEPOLICY_DIRS += $(LINEAGE_VENDOR_SEPOLICY_DIRS)
 endif
 
