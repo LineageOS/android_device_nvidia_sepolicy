@@ -1,0 +1,1 @@
+allow migrate_legacy_obb_data same_process_hal_file:file r_file_perms;
