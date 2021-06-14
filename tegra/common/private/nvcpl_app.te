@@ -116,3 +116,6 @@ allow nvcpl_app sysfs_vrr:file rw_file_perms;
 #  persist.sys.pbc.psys.cap
 #  persist.sys.pbc.ibat.cap
 set_prop(nvcpl_app, system_prop)
+
+r_dir_file(nvcpl_app, sysfs_class_regulator)
+r_dir_file(nvcpl_app, sysfs_regulator_name)
