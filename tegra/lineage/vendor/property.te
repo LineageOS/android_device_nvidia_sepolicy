@@ -1,1 +1,5 @@
 type vendor_wifi_version_prop, property_type;
+
+# For ro.bt.bdaddr_path
+type bdaddr_path_prop, property_type;
+
