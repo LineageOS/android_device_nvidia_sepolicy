@@ -13,6 +13,5 @@
 # limitations under the License.
 
 type rpx_service, app_api_service, service_manager_type;
-type nvcpl_service, app_api_service, service_manager_type;
 type nv_mapper_service, app_api_service, service_manager_type;
 type prcurlservice_vndservice, vndservice_manager_type;

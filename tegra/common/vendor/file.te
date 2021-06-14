@@ -346,7 +346,6 @@ type sysfs_brcmfmac_pcie_country_code, fs_type, sysfs_type;
 type sysfs_bus_usb_bind, fs_type, sysfs_type;
 type sysfs_class_extcon, fs_type, sysfs_type;
 type sysfs_class_regulator, fs_type, sysfs_type;
-type sysfs_device_type, fs_type, sysfs_type;
 type sysfs_dp1_audio, fs_type, sysfs_type;
 type sysfs_dtb_info, fs_type, sysfs_type;
 type sysfs_extcon_name, fs_type, sysfs_type;
