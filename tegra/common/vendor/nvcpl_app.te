@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-type nvcpl_app, domain, coredomain;
-app_domain(nvcpl_app)
-
 hal_client_domain(nvcpl_app, hal_cplservice)
 hal_client_domain(nvcpl_app, hal_graphics_display)
 
