@@ -15,6 +15,7 @@
 #
 
 # Common tegra policy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/common/private
 BOARD_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/common/vendor
 LINEAGE_PRIVATE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage/private
 LINEAGE_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage/vendor
