@@ -1,0 +1,2 @@
+r_dir_file(system_app, sysfs_class_regulator)
+r_dir_file(system_app, sysfs_regulator_name)
