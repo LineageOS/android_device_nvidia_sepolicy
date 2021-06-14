@@ -1,1 +1,3 @@
+get_prop(tee, vendor_tee_prop)
+
 allow tee rpmb_block_device:blk_file {ioctl r_file_perms};
