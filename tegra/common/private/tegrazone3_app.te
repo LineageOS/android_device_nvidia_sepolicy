@@ -1,0 +1,8 @@
+type tegrazone3_app, domain, coredomain;
+
+app_domain(tegrazone3_app)
+net_domain(tegrazone3_app)
+
+get_prop(tegrazone3_app, audiohal_prop)
+get_prop(tegrazone3_app, audiohal_ro_prop)
+
