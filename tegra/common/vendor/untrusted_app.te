@@ -57,3 +57,6 @@ allow untrusted_app_25 nvcpl_service:service_manager find;
 
 # Allow untrusted apps to access oem media files
 r_dir_file(untrusted_app, oem_media_file)
+
+# Allow netflix access to nrdp property
+get_prop(untrusted_app_all, nrdp_prop)
