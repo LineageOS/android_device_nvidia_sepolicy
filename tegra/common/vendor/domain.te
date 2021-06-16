@@ -35,3 +35,4 @@ allow domain rootfs:lnk_file getattr;
 # handles_by_pid directory and creates entry if not present.
 allow domain debugfs_nvmap:dir search;
 
+get_prop(domain, mediavndsvc_prop)
