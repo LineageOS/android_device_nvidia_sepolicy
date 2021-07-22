@@ -48,3 +48,6 @@
 /sys/firmware/devicetree/base/chosen/proc-board/name                                u:object_r:sysfs_board:s0
 /sys/firmware/devicetree/base/chosen/proc-board/sku                                 u:object_r:sysfs_board:s0
 /sys/firmware/devicetree/base/compatible                                            u:object_r:sysfs_device_type:s0
+
+# Tegra Vendor Init
+/vendor/bin/init_tegra		u:object_r:init_tegra_exec:s0
