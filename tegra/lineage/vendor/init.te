@@ -12,3 +12,7 @@ allow init hal_health_default_exec:file execute;
 allow init vendor_bt_exec:file execute;
 
 allow init self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+allowxperm init metadata_block_device:blk_file ioctl {
+  BLKSECDISCARD BLKDISCARD
+};
