@@ -25,6 +25,7 @@ BOARD_VENDOR_SEPOLICY_DIRS   += device/nvidia/sepolicy/t210/common/vendor
 LINEAGE_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/lineage/vendor
 else ifneq ($(filter $(TARGET_TEGRA_VERSION), t186 t194),)
 BOARD_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common/vendor
+LINEAGE_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/lineage/vendor
 endif
 
 ifneq ($(LINEAGE_BUILD),)
