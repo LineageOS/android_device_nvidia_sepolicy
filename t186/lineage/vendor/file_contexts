@@ -1,3 +1,13 @@
+/dev/block/platform/3400000.sdhci/by-name/APP_[ab]		u:object_r:system_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/BMP_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/kernel_[ab]		u:object_r:boot_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/kernel-dtb_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/kernel-dtbo_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/metadata		u:object_r:metadata_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/misc			u:object_r:misc_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/SOS_[ab]		u:object_r:boot_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/UDA			u:object_r:userdata_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/vendor_[ab]		u:object_r:system_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/APP_a			u:object_r:system_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/kernel_a		u:object_r:boot_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/kernel-dtb_a		u:object_r:bootloader_block_device:s0
