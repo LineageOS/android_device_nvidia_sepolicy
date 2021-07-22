@@ -42,3 +42,4 @@
 /sys/firmware/devicetree/base/chosen/proc-board/id                                  u:object_r:sysfs_board:s0
 /sys/firmware/devicetree/base/chosen/proc-board/name                                u:object_r:sysfs_board:s0
 /sys/firmware/devicetree/base/chosen/proc-board/sku                                 u:object_r:sysfs_board:s0
+/sys/firmware/devicetree/base/compatible                                            u:object_r:sysfs_device_type:s0

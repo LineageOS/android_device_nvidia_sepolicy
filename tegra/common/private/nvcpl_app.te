@@ -13,8 +13,6 @@ allow nvcpl_app mount_service:service_manager find;
 allow nvcpl_app content_service:service_manager find;
 allow nvcpl_app device_identifiers_service:service_manager find;
 
-allow nvcpl_app sysfs_device_type:file r_file_perms;
-
 allow nvcpl_app system_app_data_file:{ file lnk_file } create_file_perms;
 allow nvcpl_app system_app_data_file:dir create_dir_perms;
 

@@ -42,6 +42,8 @@ allow nvcpl_app hal_power_tegra:binder call;
 
 # ==== START sysfs rules =====
 
+allow nvcpl_app sysfs_device_type:file r_file_perms;
+
 # Allow nvcpl to read /sys/module/tcp_output/parameters/tcp_window_divisor
 allow nvcpl_app sysfs_tcp_window_divisor:file rw_file_perms;
 

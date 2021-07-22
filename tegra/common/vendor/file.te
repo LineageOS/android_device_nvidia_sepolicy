@@ -336,6 +336,7 @@ type halaudio_data_file, file_type, data_file_type;
 type diag_data_file, file_type, data_file_type, core_data_file_type;
 
 type sysfs_device_platform, fs_type, sysfs_type;
+type sysfs_device_type, fs_type, sysfs_type;
 
 type shield_ota_file, file_type, data_file_type, mlstrustedobject;
 
