@@ -33,6 +33,11 @@
 /(vendor|system/vendor)/lib(64)?/hw/audio\.primary\.tegra\.so                       u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/sound_trigger\.primary\.tegra\.so               u:object_r:same_process_hal_file:s0
 
+# RTL Bluetooth/Wifi Firmware
+/vendor/firmware/rtl.*_config			u:object_r:vendor_firmware_wifi_file:s0
+/vendor/firmware/rtl.*_fw			u:object_r:vendor_firmware_wifi_file:s0
+/vendor/firmware/rtl.*_settings\.bin		u:object_r:vendor_firmware_wifi_file:s0
+
 # Sysfs paths
 /sys/bus/usb/drivers/hub/3-0:1\.0                                                   u:object_r:sysfs_usb_controller:s0
 /sys/bus/i2c/drivers/ina3221x                                                       u:object_r:sysfs_nvi2c:s0
