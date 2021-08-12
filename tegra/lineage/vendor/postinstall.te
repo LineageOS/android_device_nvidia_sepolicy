@@ -1,1 +1,3 @@
 get_prop(postinstall, ota_prop)
+
+allowxperm postinstall bootloader_block_device:blk_file ioctl { HDIO_GETGEO BLKGETSIZE };
