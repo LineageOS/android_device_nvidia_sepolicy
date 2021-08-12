@@ -5,6 +5,7 @@
 /dev/block/platform/3400000.sdhci/by-name/kernel-dtbo_[ab]	u:object_r:bootloader_block_device:s0
 /dev/block/platform/3400000.sdhci/by-name/metadata		u:object_r:metadata_block_device:s0
 /dev/block/platform/3400000.sdhci/by-name/misc			u:object_r:misc_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/odm_[ab]		u:object_r:system_block_device:s0
 /dev/block/platform/3400000.sdhci/by-name/SOS_[ab]		u:object_r:boot_block_device:s0
 /dev/block/platform/3400000.sdhci/by-name/UDA			u:object_r:userdata_block_device:s0
 /dev/block/platform/3400000.sdhci/by-name/vendor_[ab]		u:object_r:system_block_device:s0
@@ -14,6 +15,7 @@
 /dev/block/platform/3460000.sdhci/by-name/kernel-dtbo_[ab]	u:object_r:bootloader_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/metadata		u:object_r:metadata_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/misc			u:object_r:misc_block_device:s0
+/dev/block/platform/3460000.sdhci/by-name/odm_[ab]		u:object_r:system_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/SOS_a			u:object_r:boot_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/SMD			u:object_r:smd_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/SMD_b			u:object_r:smd_block_device:s0
@@ -24,6 +26,7 @@
 /dev/block/platform/2450000.ufshci/by-name/kernel-dtbo_[ab]	u:object_r:bootloader_block_device:s0
 /dev/block/platform/2450000.ufshci/by-name/metadata		u:object_r:metadata_block_device:s0
 /dev/block/platform/2450000.ufshci/by-name/misc			u:object_r:misc_block_device:s0
+/dev/block/platform/2450000.ufshci/by-name/odm_[ab]		u:object_r:system_block_device:s0
 /dev/block/platform/2450000.ufshci/by-name/SOS_a		u:object_r:boot_block_device:s0
 /dev/block/platform/2450000.ufshci/by-name/SMD			u:object_r:smd_block_device:s0
 /dev/block/platform/2450000.ufshci/by-name/SMD_b		u:object_r:smd_block_device:s0
