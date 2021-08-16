@@ -16,7 +16,7 @@ type bt_loader, domain;
 type bt_loader_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(bt_loader)
-set_prop(bt_loader, bdaddr_path_prop)
+set_prop(bt_loader, vendor_bdaddr_prop)
 
 allow bt_loader vendor_shell_exec:file rx_file_perms;
 not_full_treble(`allow bt_loader shell_exec:file rx_file_perms;')

@@ -1,4 +1,4 @@
-ro.bt.bdaddr_path                   u:object_r:bdaddr_path_prop:s0
+ro.vendor.bt.bdaddr_path       u:object_r:vendor_bdaddr_prop:s0
 
 vendor.wlan.driver.version     u:object_r:vendor_wifi_version_prop:s0
 vendor.wlan.firmware.version   u:object_r:vendor_wifi_version_prop:s0

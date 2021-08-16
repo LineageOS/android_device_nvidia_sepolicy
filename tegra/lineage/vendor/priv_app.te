@@ -1,7 +1,6 @@
 get_prop(priv_app, audiohal_prop)
 get_prop(priv_app, audiohal_ro_prop)
 get_prop(priv_app, apexd_prop)
-get_prop(priv_app, bdaddr_path_prop)
 get_prop(priv_app, boottime_prop)
 
 allow priv_app proc_interrupts:file r_file_perms;

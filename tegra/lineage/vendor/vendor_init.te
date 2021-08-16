@@ -39,3 +39,4 @@ allow vendor_init self:capability2 block_suspend;
 
 get_prop(vendor_init, vendor_usb_prop)
 get_prop(vendor_init, vendor_model_prop)
+get_prop(vendor_init, vendor_bdaddr_prop)
