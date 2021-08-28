@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Joycond
+/(vendor|system/vendor)/bin/joycond             u:object_r:joycond_exec:s0
+
 # RTL Bluetooth/Wifi Firmware
 /vendor/firmware/rtl.*_config			u:object_r:vendor_firmware_wifi_file:s0
 /vendor/firmware/rtl.*_fw			u:object_r:vendor_firmware_wifi_file:s0
