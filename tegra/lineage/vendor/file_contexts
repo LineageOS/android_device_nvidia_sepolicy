@@ -18,6 +18,9 @@
 # DRM
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.clearkey        u:object_r:hal_drm_clearkey_exec:s0
 
+# Joycond
+/(vendor|system/vendor)/bin/joycond                                              u:object_r:joycond_exec:s0
+
 # Partitions
 /dev/block/mmcblk0boot1		u:object_r:bootloader_block_device:s0
 
