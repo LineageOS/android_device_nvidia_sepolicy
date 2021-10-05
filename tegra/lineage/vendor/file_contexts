@@ -36,6 +36,9 @@
 /(vendor|system/vendor)/lib(64)?/hw/audio\.primary\.tegra\.so                       u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/sound_trigger\.primary\.tegra\.so               u:object_r:same_process_hal_file:s0
 
+# Nvgpu shim
+/(vendor|system/vendor)/lib(64)?/libgol.so		u:object_r:same_process_hal_file:s0
+
 # RTL Bluetooth/Wifi Firmware
 /vendor/firmware/rtl.*_config			u:object_r:vendor_firmware_wifi_file:s0
 /vendor/firmware/rtl.*_fw			u:object_r:vendor_firmware_wifi_file:s0
