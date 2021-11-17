@@ -26,7 +26,6 @@ allow nvcpl_app tegradc_device:chr_file rw_file_perms;
 # allow nvcpl accessing power related dirs/files such as /dev/cpu_freq_min, cpu_freq_max
 allow nvcpl_app device:dir r_dir_perms;
 
-allow nvcpl_app nvcpl_service:service_manager { add find };
 allow nvcpl_app activity_service:service_manager find;
 allow nvcpl_app connectivity_service:service_manager find;
 allow nvcpl_app display_service:service_manager find;

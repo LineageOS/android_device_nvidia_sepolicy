@@ -52,9 +52,6 @@ dontauditxperm untrusted_app self:udp_socket ioctl SIOCGIFHWADDR;
 # service published through hubcore.
 binder_call(untrusted_app, hubcore)
 
-# Allow frameworks to find 'nvcpl' system service; enables app profiles
-allow untrusted_app_25 nvcpl_service:service_manager find;
-
 # Allow untrusted apps to access oem media files
 r_dir_file(untrusted_app, oem_media_file)
 
