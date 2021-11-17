@@ -1,7 +1,8 @@
 typeattribute nvcpl_app coredomain;
 app_domain(nvcpl_app)
 
-allow nvcpl_app nvcpl_service:service_manager { add find };
+add_service(nvcpl_app, nvcpl_service);
+
 allow nvcpl_app activity_service:service_manager find;
 allow nvcpl_app connectivity_service:service_manager find;
 allow nvcpl_app display_service:service_manager find;

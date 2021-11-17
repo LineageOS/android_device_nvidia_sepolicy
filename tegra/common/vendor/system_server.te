@@ -65,9 +65,6 @@ allow system_server proc_net:file rw_file_perms;
 # Access service manager
 allow system_server system_app_service:service_manager find;
 
-# Access nvcpl
-allow system_server nvcpl_service:service_manager find;
-
 # pwm-fan
 allow system_server sysfs_pwm_fan:file r_file_perms;
 

@@ -169,9 +169,6 @@ allow system_app sysfs_usb_blacklist:file rw_file_perms;
 allow system_app asec_apk_file:dir r_dir_perms;
 allow system_app asec_apk_file:file r_file_perms;
 
-# Allow system app to get nvcpl service
-allow system_app nvcpl_service:service_manager find;
-
 # Allow system_app to talk to nvphsd
 allow system_app nvphsd_hwservice:hwservice_manager find;
 
