@@ -295,6 +295,7 @@
 /vendor/bin/hw/android\.hardware\.keymaster@3\.0-service\.tegra		u:object_r:hal_keymaster_tegra_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.convertibleport@1\.0-service		u:object_r:hal_convertibleport_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.cpl\.service@1\.0-service		u:object_r:hal_cplservice_default_exec:s0
+/vendor/bin/hw/vendor\.nvidia\.hardware\.cpl\.service_common@1\.0-service	u:object_r:hal_cpl_service_common_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.gensysfs@1\.0-service		u:object_r:hal_gensysfs_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.ipprotect@1\.0-service		u:object_r:hal_ipprotect_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.media\.vndsvc@1\.0-service		u:object_r:hal_mediavndsvc_default_exec:s0
@@ -348,4 +349,5 @@
 /(vendor|system/vendor)/lib(64)?/nvtranscode.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/vendor.nvidia.hardware.cpl.service@1.0.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/vendor.nvidia.hardware.cpl.tools@1.0.so		u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/vendor.nvidia.hardware.cpl.service_common@1.0.so	u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/vendor.nvidia.hardware.phs@1.0.so		u:object_r:same_process_hal_file:s0

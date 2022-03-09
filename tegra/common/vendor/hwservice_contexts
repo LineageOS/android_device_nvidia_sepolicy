@@ -17,6 +17,7 @@ vendor.nvidia.hardware.nvwifi::INvSupplicant	u:object_r:hal_wifi_supplicant_hwse
 vendor.nvidia.hardware.cpl.service::INvCplHalService		u:object_r:hal_cplservice_hwservice:s0
 vendor.nvidia.hardware.cpl.interfacecb::INvCplInterfaceManager		u:object_r:hal_cplservice_hwservice:s0
 vendor.nvidia.hardware.cpl.tools::INvToolsApiHalService		u:object_r:hal_cplservice_hwservice:s0
+vendor.nvidia.hardware.cpl.service_common::INvCplHalCommonService	u:object_r:hal_cpl_service_common_hwservice:s0
 vendor.nvidia.hardware.thermal::IThermal		u:object_r:hal_thermal_hwservice:s0
 vendor.nvidia.hardware.thermalservice::IThermalService      u:object_r:hal_thermalservice_hwservice:s0
 vendor.nvidia.hardware.thermalservice::IThermalServiceCallback      u:object_r:hal_thermalservice_hwservice:s0

@@ -1,0 +1,13 @@
+type hal_cpl_service_common_default, domain;
+hal_server_domain(hal_cpl_service_common_default, hal_cpl_service_common)
+
+type hal_cpl_service_common_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_cpl_service_common_default)
+
+hal_client_domain(hal_cpl_service_common_default, hal_cplservice)
+
+binder_call(hal_cpl_service_common_client, hal_cpl_service_common_server)
+binder_call(hal_cpl_service_common_server, hal_cpl_service_common_client)
+
+add_hwservice(hal_cpl_service_common_server, hal_cpl_service_common_hwservice)
+allow hal_cpl_service_common_client hal_cpl_service_common_hwservice:hwservice_manager find;

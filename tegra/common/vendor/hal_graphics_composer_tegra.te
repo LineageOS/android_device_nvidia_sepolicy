@@ -64,6 +64,7 @@ allow hal_graphics_composer_tegra mediacodec:fd use;
 hal_server_domain(hal_graphics_composer_tegra, hal_graphics_display)
 
 hal_client_domain(hal_graphics_composer_tegra, hal_cplservice)
+hal_client_domain(hal_graphics_composer_tegra, hal_cpl_service_common)
 hal_client_domain(hal_graphics_composer_tegra, hal_graphics_mempool)
 hal_server_domain(hal_graphics_composer_tegra, hal_graphics_mempool)
 hal_client_domain(hal_graphics_composer_tegra, hal_ipprotect_dolby)
