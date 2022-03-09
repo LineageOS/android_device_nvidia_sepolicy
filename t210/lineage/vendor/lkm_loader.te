@@ -1,2 +1,0 @@
-allow lkm_loader kernel:process setsched;
-allow lkm_loader self:capability {sys_module sys_nice};

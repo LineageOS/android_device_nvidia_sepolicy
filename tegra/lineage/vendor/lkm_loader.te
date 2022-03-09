@@ -1,2 +1,0 @@
-allow lkm_loader sysfs_wlan_fwpath:file r_file_perms;
-r_dir_file(lkm_loader, mnt_vendor_file)
