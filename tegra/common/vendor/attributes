@@ -25,6 +25,9 @@ attribute hal_convertibleport_server;
 attribute hal_cplservice;
 attribute hal_cplservice_client;
 attribute hal_cplservice_server;
+attribute hal_cpl_service_common;
+attribute hal_cpl_service_common_client;
+attribute hal_cpl_service_common_server;
 
 # HAL Factory Service
 attribute hal_factoryservice;

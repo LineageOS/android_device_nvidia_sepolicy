@@ -23,3 +23,6 @@ allow { appdomain -ephemeral_app -isolated_app } fuseblk:file rw_file_perms;
 
 # Access to radio_data_file
 allow appdomain radio_data_file:dir getattr;
+
+binder_call( { appdomain -isolated_app }, hal_cpl_service_common_server)
+allow { appdomain -isolated_app } hal_cpl_service_common_hwservice:hwservice_manager find;

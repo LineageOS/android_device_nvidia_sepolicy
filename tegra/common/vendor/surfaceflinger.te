@@ -13,6 +13,7 @@
 # limitations under the License.
 
 hal_client_domain(surfaceflinger, hal_cplservice)
+hal_client_domain(surfaceflinger, hal_cpl_service_common)
 
 # Allow writing to ro.sf.lcd_density at boot, so that we can dynamically
 # configure the DPI

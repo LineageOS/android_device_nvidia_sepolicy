@@ -14,6 +14,7 @@
 
 type hal_convertibleport_hwservice, hwservice_manager_type;
 type hal_cplservice_hwservice, hwservice_manager_type;
+type hal_cpl_service_common_hwservice, hwservice_manager_type;
 type hal_factoryservice_hwservice, hwservice_manager_type;
 type hal_flynn_hwservice, hwservice_manager_type;
 type hal_gensysfs_hwservice,  hwservice_manager_type;
