@@ -200,7 +200,7 @@
 /sys/devices/soc[0-9]+(/.*)?		u:object_r:sysfs_soc:s0
 /sys/devices/system/cpu/cpuquiet/tegra_cpuquiet/enable		u:object_r:sysfs_power_tegra_cpuquiet:s0
 /sys/devices/tegra-ehci\.[0-9](/.*)?		u:object_r:sysfs_bus_usb:s0
-/sys/devices/thermal-fan-est(/.*)?		u:object_r:sysfs_thermal_fan:s0
+/sys/devices/thermal_fan_est(/.*)?		u:object_r:sysfs_thermal_fan:s0
 /sys/devices/virtual/misc/tegra-throughput/fps		u:object_r:sysfs_throughput:s0
 /sys/devices/virtual/misc/tegra-throughput/framecount		u:object_r:sysfs_throughput:s0
 /sys/devices/virtual/misc/touch/log		u:object_r:sysfs_touch_log:s0
