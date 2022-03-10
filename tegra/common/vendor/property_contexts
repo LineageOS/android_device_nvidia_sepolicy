@@ -77,9 +77,9 @@ ro.vendor.factory.wifi			u:object_r:vendor_wifi_prop:s0
 persist.vendor.bluetooth.factoryreset u:object_r:bluetooth_prop:s0
 
 # AB OTA properties
-vendor.tegra.ota.boot_device		u:object_r:ota_prop:s0
-vendor.tegra.ota.gpt_device		u:object_r:ota_prop:s0
-vendor.tegra.ota.user_device		u:object_r:ota_prop:s0
+vendor.tegra.ota.boot_device		u:object_r:vendor_ota_prop:s0
+vendor.tegra.ota.gpt_device		u:object_r:vendor_ota_prop:s0
+vendor.tegra.ota.user_device		u:object_r:vendor_ota_prop:s0
 
 # hwc properties (compatibility, to deprecate)
 persist.vendor.sys.NV_DISPXRES		u:object_r:hwc_prop:s0

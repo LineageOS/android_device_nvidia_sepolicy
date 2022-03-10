@@ -35,7 +35,7 @@ type power_button_recovery_prop, property_type;
 type usb_mode_prop, property_type;
 
 # AB OTA properties
-type ota_prop, property_type;
+type vendor_ota_prop, property_type;
 
 # For flynnd
 type flynnd_prop, property_type;
