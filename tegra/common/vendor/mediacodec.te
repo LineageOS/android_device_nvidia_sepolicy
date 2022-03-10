@@ -22,3 +22,5 @@ hal_client_domain(mediacodec, hal_power)
 allow_use_phs(mediacodec)
 allow mediacodec nvphsd_hwservice:hwservice_manager find;
 allow mediacodec system_server:fifo_file { append write };
+
+get_prop(mediacodec, nvmedia_prop)
