@@ -82,6 +82,7 @@
 /dev/nvhost-tsg-gpu		u:object_r:gpu_device:s0
 /dev/nvhost-vi([0-9]|\.1)?		u:object_r:camera_device:s0
 /dev/nvhost-vic		u:object_r:gpu_device:s0
+/dev/nvgpu(/.*)?	u:object_r:gpu_device:s0
 /dev/nvmap		u:object_r:gpu_device:s0
 /dev/ozwpan		u:object_r:ozmo_device:s0
 /dev/quadd_auth		u:object_r:quadd_auth_device:s0
