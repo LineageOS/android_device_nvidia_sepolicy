@@ -188,9 +188,6 @@ type surfaceflinger_fc, file_type;
 # /mnt/factory
 type factory_file, file_type;
 
-# data/misc/hubcore
-type hubcore_data_file, file_type, data_file_type, core_data_file_type;
-
 # Needed to mount fuseblk filesystem
 type fuseblk, sdcard_type, fs_type, mlstrustedobject;
 
@@ -368,7 +365,6 @@ type dolby_data_file, file_type, data_file_type;
 type factory_tests_file, file_type, data_file_type;
 type mediadrm_vendor_data_file, file_type, data_file_type;
 type vendor_firmware_gpu_file, file_type, vendor_file_type;
-type vendor_firmware_hubcore_file, file_type, vendor_file_type;
 
 type debugfs_bt, fs_type, debugfs_type;
 type debugfs_tegradc, fs_type, debugfs_type, mlstrustedobject;

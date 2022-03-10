@@ -18,7 +18,6 @@ vendor.nvidia.hardware.cpl.service::INvCplHalService		u:object_r:hal_cplservice_
 vendor.nvidia.hardware.cpl.interfacecb::INvCplInterfaceManager		u:object_r:hal_cplservice_hwservice:s0
 vendor.nvidia.hardware.cpl.tools::INvToolsApiHalService		u:object_r:hal_cplservice_hwservice:s0
 vendor.nvidia.hardware.thermal::IThermal		u:object_r:hal_thermal_hwservice:s0
-vendor.nvidia.hardware.hubcore::IHubcorehw	u:object_r:hal_hubcore_hwservice:s0
 vendor.nvidia.hardware.thermalservice::IThermalService      u:object_r:hal_thermalservice_hwservice:s0
 vendor.nvidia.hardware.thermalservice::IThermalServiceCallback      u:object_r:hal_thermalservice_hwservice:s0
 vendor.nvidia.hardware.factoryservice::IFactoryService      u:object_r:hal_factoryservice_hwservice:s0

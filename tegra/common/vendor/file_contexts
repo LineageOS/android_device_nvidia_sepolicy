@@ -295,7 +295,6 @@
 /vendor/bin/hw/vendor\.nvidia\.hardware\.convertibleport@1\.0-service		u:object_r:hal_convertibleport_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.cpl\.service@1\.0-service		u:object_r:hal_cplservice_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.gensysfs@1\.0-service		u:object_r:hal_gensysfs_default_exec:s0
-/vendor/bin/hw/vendor\.nvidia\.hardware\.hubcore@1\.0-service		u:object_r:hal_hubcore_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.ipprotect@1\.0-service		u:object_r:hal_ipprotect_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.media\.vndsvc@1\.0-service		u:object_r:hal_mediavndsvc_default_exec:s0
 /vendor/bin/hw/vendor\.nvidia\.hardware\.shieldtech\.rpx@1\.0-service		u:object_r:hal_rpx_default_exec:s0
@@ -306,7 +305,6 @@
 /vendor/firmware/gm20b(/.*)?		u:object_r:vendor_firmware_gpu_file:s0
 /vendor/firmware/im501.*		u:object_r:vendor_firmware_im501_file:s0
 /vendor/firmware/nvram.*		u:object_r:vendor_firmware_wifi_file:s0
-/vendor/firmware/stZigbee		u:object_r:vendor_firmware_hubcore_file:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.audio@4\.0-service-msd		u:object_r:hal_audio_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.bluetooth@1\.0-service		u:object_r:hal_bluetooth_tegra_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.factoryservice@1\.0-service		u:object_r:hal_factoryservice_default_exec:s0
