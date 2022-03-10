@@ -71,7 +71,7 @@
 /dev/nvhost-dbg-gpu		u:object_r:gpu_device:s0
 /dev/nvhost-gpu		u:object_r:gpu_device:s0
 /dev/nvhost-isp([0-9]|\.1)?		u:object_r:camera_device:s0
-/dev/nvhost-msenc		u:object_r:camera_device:s0
+/dev/nvhost-msenc		u:object_r:video_device:s0
 /dev/nvhost-nvdec1		u:object_r:video_device:s0
 /dev/nvhost-nvdec		u:object_r:video_device:s0
 /dev/nvhost-nvenc1		u:object_r:video_device:s0
