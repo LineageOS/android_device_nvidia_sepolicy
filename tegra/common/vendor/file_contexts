@@ -226,6 +226,7 @@
 /sys/firmware/devicetree/base/chosen/nvidia,safe_mode_adb		u:object_r:sysfs_safe_mode_adb:s0
 /sys/firmware/devicetree/base/chosen/nvidia,tegra-flynn-sku		u:object_r:sysfs_flynn:s0
 /sys/firmware/devicetree/base/chosen/reset(/.*)?		u:object_r:sysfs_reset_status:s0
+/sys/firmware/devicetree/base/compatible		u:object_r:sysfs_device_type:s0
 /sys/firmware/devicetree/base/nct(/.*)?		u:object_r:sysfs_nct:s0
 /sys/firmware/devicetree/base/nvidia,dtsfilename		u:object_r:sysfs_dtb_info:s0
 /sys/firmware/devicetree/base/tnspec(/.*)?		u:object_r:sysfs_tnspec:s0
