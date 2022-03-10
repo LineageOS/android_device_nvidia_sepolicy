@@ -55,3 +55,8 @@ allow init proc_wmem_max_writable:file write;
 # allow init to format block after flash
 allow init cache_block_device:blk_file w_file_perms;
 allow init userdata_block_device:blk_file w_file_perms;
+
+allow init tmpfs:lnk_file { create_file_perms relabelfrom };
+allow init boot_block_device:lnk_file relabelto;
+allow init bootloader_block_device:lnk_file relabelto;
+allow init metadata_block_device:lnk_file relabelto;
