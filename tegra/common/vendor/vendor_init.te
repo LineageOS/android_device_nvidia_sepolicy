@@ -2,3 +2,5 @@ set_prop(vendor_init, hwc_prop)
 set_prop(vendor_init, tegra_graphics_prop)
 
 allow vendor_init tee_data_file:dir create_dir_perms;
+
+allow vendor_init proc_legacy_va_layout:file rw_file_perms;

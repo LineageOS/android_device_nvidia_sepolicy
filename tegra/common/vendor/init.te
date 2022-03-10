@@ -60,3 +60,5 @@ allow init tmpfs:lnk_file { create_file_perms relabelfrom };
 allow init boot_block_device:lnk_file relabelto;
 allow init bootloader_block_device:lnk_file relabelto;
 allow init metadata_block_device:lnk_file relabelto;
+
+allow init proc_legacy_va_layout:file rw_file_perms;

@@ -31,3 +31,5 @@ genfscon debugfs /nvmap/handles_by_pid     u:object_r:debugfs_nvmap:s0
 
 genfscon sysfs /devices/pwm-fan/hwmon/hwmon0		u:object_r:sysfs_pwm_fan:s0
 genfscon sysfs /devices/pwm-fan/hwmon/hwmon             u:object_r:sysfs_pwm_fan:s0
+
+genfscon proc /sys/vm/legacy_va_layout			u:object_r:proc_legacy_va_layout:s0
