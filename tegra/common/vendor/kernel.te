@@ -21,3 +21,6 @@ dontaudit kernel self:capability mknod;
 
 # allow kernel to read iM501 firmware
 allow kernel vendor_firmware_im501_file:file r_file_perms;
+
+allow kernel vendor_firmware_gpu_file:file r_file_perms;
+allow kernel vendor_firmware_gpu_file:dir {getattr search};
