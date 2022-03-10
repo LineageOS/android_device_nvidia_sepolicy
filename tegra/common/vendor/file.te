@@ -365,3 +365,5 @@ type vendor_firmware_gpu_file, file_type, vendor_file_type;
 
 type debugfs_bt, fs_type, debugfs_type;
 type debugfs_tegradc, fs_type, debugfs_type, mlstrustedobject;
+
+type proc_legacy_va_layout, fs_type, proc_type;
