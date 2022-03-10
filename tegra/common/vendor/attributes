@@ -51,11 +51,6 @@ attribute hal_graphics_mempool;
 attribute hal_graphics_mempool_client;
 attribute hal_graphics_mempool_server;
 
-# HAL Hubcore
-attribute hal_hubcore;
-attribute hal_hubcore_client;
-attribute hal_hubcore_server;
-
 # HAL IP Protect Dolby
 attribute hal_ipprotect_dolby;
 attribute hal_ipprotect_dolby_client;
