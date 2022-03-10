@@ -31,3 +31,5 @@ allow hal_audio_default self:netlink_kobject_uevent_socket { create setopt bind 
 # for reading im501 char device
 allow hal_audio_default im501_spi_device:chr_file { rw_file_perms };
 allow hal_audio_default im501_pcm_device:chr_file { rw_file_perms };
+
+r_dir_file(hal_audio_default, sysfs_hda_map);
