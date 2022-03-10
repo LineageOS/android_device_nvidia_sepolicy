@@ -134,3 +134,5 @@ allow system_server nv_mapper_service:service_manager { find };
 #HDMI service
 hal_client_domain(system_server, hal_graphics_display)
 hal_client_domain(system_server, hal_graphics_composer)
+
+allow system_server sysfs_hdmi_audio:{ file lnk_file } r_file_perms;
