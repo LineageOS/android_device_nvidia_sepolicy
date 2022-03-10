@@ -22,7 +22,4 @@ r_dir_file(hal_wifi_supplicant_default, factory_file)
 # Access to mmc_host
 r_dir_file(hal_wifi_supplicant_default, sysfs_mmc_host)
 
-# Access to sysfs_netcfg
-r_dir_file(hal_wifi_supplicant_default, sysfs_netcfg)
-
 allow hal_wifi_supplicant_default proc_net_wifi:file rw_file_perms;

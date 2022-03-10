@@ -32,8 +32,8 @@ full_treble_only(`
 ')
 
 allow setup_hv system_file:file execute_no_trans;
-allow setup_hv sysfs_netcfg:dir search;
-allow setup_hv sysfs_netcfg:lnk_file read;
+allow setup_hv sysfs_net:dir search;
+allow setup_hv sysfs_net:lnk_file read;
 allow setup_hv sysfs_vgpu_devfreq:file rw_file_perms;
 r_dir_file(setup_hv, sysfs_devicetree_xudc);
 r_dir_file(setup_hv, sysfs_tegra_hv);

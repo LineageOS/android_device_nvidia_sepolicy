@@ -114,7 +114,6 @@
 /sys/class/extcon		u:object_r:sysfs_class_extcon:s0
 /sys/class/gpio(/.*)?		u:object_r:sysfs_gpio:s0
 /sys/class/gps_wake(/.*)?		u:object_r:sysfs_gps_wake:s0
-/sys/class/net(/.*)?		u:object_r:sysfs_netcfg:s0
 /sys/class/ozmo_wpan/ozwpan/bind		u:object_r:sysfs_ozmo:s0
 /sys/class/ozmo_wpan/ozwpan/devices		u:object_r:sysfs_ozmo:s0
 /sys/class/ozmo_wpan/ozwpan/latency		u:object_r:sysfs_ozmo:s0
