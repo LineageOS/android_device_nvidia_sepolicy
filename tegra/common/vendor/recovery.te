@@ -35,7 +35,7 @@ recovery_only(`
   allow recovery bootloader_block_device:blk_file rw_file_perms;
 
   # Allow recovery to read OTA properties
-  get_prop(recovery, ota_prop)
+  get_prop(recovery, vendor_ota_prop)
 
   # Enable adb in recovery kernel
   set_prop(recovery, ffs_prop)
