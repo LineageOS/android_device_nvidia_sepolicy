@@ -15,6 +15,5 @@
 # Allow hostapd to access symlinks created by wifi_loader
 allow hal_wifi_hostapd_default wifi_data_file:lnk_file read;
 
-#allow hostapd to access sysfs_netcfg and sysfs_mmc_host
-r_dir_file(hal_wifi_hostapd_default, sysfs_netcfg)
+#allow hostapd to access sysfs_mmc_host
 r_dir_file(hal_wifi_hostapd_default, sysfs_mmc_host)

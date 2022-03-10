@@ -20,7 +20,7 @@ allow priv_app storage_stub_file:dir getattr;
 allow priv_app system_app_service:service_manager find;
 
 # Allow netcfg/mmc_host/pci access
-r_dir_file(priv_app, sysfs_netcfg)
+r_dir_file(priv_app, sysfs_net)
 r_dir_file(priv_app, sysfs_mmc_host)
 r_dir_file(priv_app, sysfs_pci_device)
 
