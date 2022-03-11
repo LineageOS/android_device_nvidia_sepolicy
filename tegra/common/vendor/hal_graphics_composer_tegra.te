@@ -71,3 +71,5 @@ hal_client_domain(hal_graphics_composer_tegra, hal_ipprotect_dolby)
 hal_client_domain(hal_graphics_composer_tegra, hal_ipprotect_superres)
 
 vndbinder_use(hal_graphics_composer_tegra)
+
+get_prop(hal_graphics_composer_tegra, hdcp_srm_prop)
