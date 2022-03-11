@@ -17,3 +17,6 @@ hal_server_domain(hal_drm_widevine, hal_drm)
 
 type hal_drm_widevine_exec, file_type, exec_type, vendor_file_type;
 init_daemon_domain(hal_drm_widevine)
+
+vndbinder_use(hal_drm_default)
+vndbinder_use(hal_drm_widevine)
