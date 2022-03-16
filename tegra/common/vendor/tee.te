@@ -20,5 +20,6 @@ allow tee self:capability { setuid setgid sys_rawio ipc_lock };
 allow tee block_device:dir search;
 allow tee rpmb_block_device:blk_file rw_file_perms;
 allow tee cpc_device:chr_file rw_file_perms;
+allowxperm tee rpmb_block_device:blk_file ioctl tlk_ioctls;
 
 set_prop(tee, vendor_tee_prop)
