@@ -7,3 +7,4 @@ set_prop(init_tegra, vendor_ota_prop)
 
 set_prop(init_tegra, vendor_usb_prop)
 set_prop(init_tegra, vendor_model_prop)
+set_prop(init_tegra, nrdp_prop)
