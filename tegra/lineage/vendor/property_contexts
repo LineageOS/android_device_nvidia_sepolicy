@@ -5,3 +5,4 @@ ro.vendor.nv.usb.		u:object_r:vendor_usb_prop:s0
 ro.lineage.tegraid		u:object_r:exported_default_prop:s0
 
 ro.vendor.lineage.tegra.	u:object_r:vendor_model_prop:s0
+persist.vendor.lineage.tegra.	u:object_r:vendor_model_prop:s0
