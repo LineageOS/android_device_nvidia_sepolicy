@@ -18,7 +18,7 @@
 /data/vendor/ss(/.*)?		u:object_r:tee_data_file:s0
 /data/vendor/tlk(/.*)?		u:object_r:tee_data_file:s0
 /data/vendor/wifi(/.*)?		u:object_r:wifi_vendor_data_file:s0
-/dev/block/mmcblk0boot0		u:object_r:bootloader_block_device:s0
+/dev/block/mmcblk0boot[0-1]	u:object_r:bootloader_block_device:s0
 /dev/block/platform/sdhci-tegra\.[0-9]/by-name/CAC		u:object_r:cache_block_device:s0
 /dev/block/platform/sdhci-tegra\.[0-9]/by-name/FCT		u:object_r:factorycalib_block_device:s0
 /dev/block/platform/sdhci-tegra\.[0-9]/by-name/LNX		u:object_r:boot_block_device:s0
