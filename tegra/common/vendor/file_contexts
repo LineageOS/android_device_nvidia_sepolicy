@@ -218,6 +218,7 @@
 /sys/devices/virtual/switch/hdmi_audio(/.*)?		u:object_r:sysfs_hdmi_audio:s0
 /sys/devices/virtual/thermal(/.*)?		u:object_r:sysfs_thermal:s0
 /sys/firmware/devicetree/base/bcmdhd_pcie_wlan/status		u:object_r:sysfs_bcmdhd_pcie:s0
+/sys/firmware/devicetree/base/bcmdhd_wlan/status		u:object_r:sysfs_bcmdhd_pcie:s0
 /sys/firmware/devicetree/base/bcmdhd_wlan/country_code_map(/.*)?		u:object_r:sysfs_bcmdhd_country_code:s0
 /sys/firmware/devicetree/base/brcmfmac_pcie_wlan/country_code_map(/.*)?		u:object_r:sysfs_brcmfmac_pcie_country_code:s0
 /sys/firmware/devicetree/base/brcmfmac_pcie_wlan/status		u:object_r:sysfs_brcmfmac_pcie:s0
