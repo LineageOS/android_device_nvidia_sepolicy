@@ -70,3 +70,5 @@ allow hal_power_tegra sysfs:file  rw_file_perms;
 
 # allow powerhal to access sysfs backlight dir
 allow hal_power_tegra sysfs_class_backlight:dir search;
+
+dontaudit hal_power_tegra default_prop:file { open read getattr };
