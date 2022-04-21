@@ -15,9 +15,6 @@
 hal_client_domain(surfaceflinger, hal_cplservice)
 hal_client_domain(surfaceflinger, hal_cpl_service_common)
 
-# Allow writing to ro.sf.lcd_density at boot, so that we can dynamically
-# configure the DPI
-get_prop(surfaceflinger, surfaceflinger_prop)
 get_prop(surfaceflinger, hwc_prop)
 # Allow execmem to use fast format/data conversions inside the driver.
 allow surfaceflinger self:process execmem;

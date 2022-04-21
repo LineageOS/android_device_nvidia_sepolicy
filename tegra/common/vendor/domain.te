@@ -17,7 +17,6 @@ r_dir_file(domain -isolated_app, sysfs_tegra_info)
 r_dir_file(domain -isolated_app, sysfs_tegrafuse_aid)
 
 # Allow all domains to read surfacefinger property
-get_prop(domain, surfaceflinger_prop)
 get_prop(domain, hwc_prop)
 get_prop(domain, tegra_graphics_prop)
 
