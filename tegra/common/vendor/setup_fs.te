@@ -21,7 +21,6 @@ set_prop(setup_fs, powerctl_prop)
 
 allow setup_fs shell_exec:file rx_file_perms;
 allow setup_fs toolbox_exec:file rx_file_perms;
-allow setup_fs make_f2fs_exec:file rx_file_perms;
 allow setup_fs setup_fs_exec:file execute_no_trans;
 allow setup_fs block_device:dir search;
 allow setup_fs userdata_block_device:blk_file rw_file_perms;
