@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# For ro.sf.lcd_density
-type surfaceflinger_prop, property_type;
 type thermal_prop, property_type;
 
 # for sys.vrr.min-refr-per-ns
