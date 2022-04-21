@@ -103,7 +103,6 @@
 /mnt/tmp/fc[0-9]		u:object_r:surfaceflinger_fc:s0
 /mnt/vendor/factory(/.*)?		u:object_r:factory_file:s0
 /mnt/vendor/wifi_config(/.*)?		u:object_r:rpx_file:s0
-/sys/block(/.*)?		u:object_r:sysfs_block:s0
 /sys/bus/hid/devices(/.*)?		u:object_r:sysfs_hid_device:s0
 /sys/bus/hid/drivers/hid-nvidia(/.*)?		u:object_r:sysfs_hid:s0
 /sys/bus/hid/drivers/Jarvis(/.*)?		u:object_r:sysfs_hid:s0

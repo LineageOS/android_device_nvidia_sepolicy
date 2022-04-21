@@ -336,7 +336,6 @@ type shield_ota_file, file_type, data_file_type, mlstrustedobject;
 
 type sysfs_audio_aux, fs_type, sysfs_type;
 type sysfs_bcmdhd_country_code, fs_type, sysfs_type;
-type sysfs_block, fs_type, sysfs_type;
 type sysfs_brcmfmac_pcie_country_code, fs_type, sysfs_type;
 type sysfs_bus_usb_bind, fs_type, sysfs_type;
 type sysfs_class_extcon, fs_type, sysfs_type;
