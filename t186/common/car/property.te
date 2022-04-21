@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-type system_ethernet_prop, property_type;
+vendor_public_prop(system_ethernet_prop);
 
 # can properties
-type can_prop, property_type;
+vendor_internal_prop(can_prop);

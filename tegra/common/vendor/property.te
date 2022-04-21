@@ -12,58 +12,58 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-type thermal_prop, property_type;
+vendor_internal_prop(thermal_prop);
 
 # for sys.vrr.min-refr-per-ns
-type vrr_prop, property_type;
+vendor_public_prop(vrr_prop);
 
 # For ro.hardware.gps
-type gpsd_prop, property_type;
+vendor_internal_prop(gpsd_prop);
 
 # For pbc
-type pbc_prop, property_type;
+vendor_internal_prop(pbc_prop);
 
 # For properties written by adbenable.sh
-type udc_prop, property_type;
+vendor_internal_prop(udc_prop);
 
 # For power_button_recovery
-type power_button_recovery_prop, property_type;
+vendor_internal_prop(power_button_recovery_prop);
 
 # darcy convertible usb port mode
-type usb_mode_prop, property_type;
+vendor_public_prop(usb_mode_prop);
 
 # AB OTA properties
-type vendor_ota_prop, property_type;
+vendor_public_prop(vendor_ota_prop);
 
 # For flynnd
-type flynnd_prop, property_type;
+vendor_internal_prop(flynnd_prop);
 
 # For audio hal
-type audiohal_prop, property_type;
-type audiohal_ro_prop, property_type;
+vendor_internal_prop(audiohal_prop);
+vendor_public_prop(audiohal_ro_prop);
 
 # hdcp srm location
-type hdcp_srm_prop, property_type;
+vendor_internal_prop(hdcp_srm_prop);
 
 # Hardware Composer properties
-type hwc_prop, property_type;
+vendor_public_prop(hwc_prop);
 
 # Netflix prop
-type nrdp_prop, property_type;
+vendor_public_prop(nrdp_prop);
 
 # For power hal
-type power_hint_prop, property_type;
-type powerhal_prop, property_type;
+vendor_internal_prop(power_hint_prop);
+vendor_public_prop(powerhal_prop);
 
-type vendor_usb_prop, property_type;
-type vendor_camera_prop, property_type;
-type vendor_bt_prop, property_type;
-type nvmedia_prop, property_type;
-type tegra_graphics_prop, property_type;
-type factoryhal_prop, property_type;
-type gamestreaming_prop, property_type;
-type mediavndsvc_prop, property_type;
-type vendor_debug_prop, property_type;
-type vendor_tee_prop, property_type;
-type vendor_vold_prop, property_type;
-type vendor_wifi_prop, property_type;
+vendor_internal_prop(vendor_usb_prop);
+vendor_public_prop(vendor_camera_prop);
+vendor_internal_prop(vendor_bt_prop);
+vendor_internal_prop(nvmedia_prop);
+vendor_internal_prop(tegra_graphics_prop);
+vendor_internal_prop(factoryhal_prop);
+vendor_internal_prop(gamestreaming_prop);
+vendor_internal_prop(mediavndsvc_prop);
+vendor_internal_prop(vendor_debug_prop);
+vendor_internal_prop(vendor_tee_prop);
+vendor_internal_prop(vendor_vold_prop);
+vendor_internal_prop(vendor_wifi_prop);

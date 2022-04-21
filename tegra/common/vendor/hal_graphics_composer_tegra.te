@@ -38,7 +38,6 @@ r_dir_file(hal_graphics_composer_tegra, proc_meminfo)
 
 set_prop(hal_graphics_composer_tegra, hwc_prop)
 get_prop(hal_graphics_composer_tegra, hwservicemanager_prop)
-set_prop(hal_graphics_composer_tegra, surfaceflinger_prop)
 
 # Allow HWC to write the EDID DB
 allow hal_graphics_composer_tegra hwc_data_file:file {create_file_perms};
@@ -46,8 +45,6 @@ allow hal_graphics_composer_tegra hwc_data_file:dir {create_dir_perms};
 
 # allow /dev to allow adf to search for /dev/adf*
 allow hal_graphics_composer_tegra device:dir r_dir_perms;
-
-set_prop(hal_graphics_composer_tegra, surfaceflinger_prop)
 
 # for accessing nvhdcp1 device
 allow hal_graphics_composer_tegra video_device:chr_file { rw_file_perms };
