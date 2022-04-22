@@ -18,7 +18,6 @@ type adb_enable_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(adb_enable)
 set_prop(adb_enable, udc_prop)
 set_prop(adb_enable, vendor_usb_prop)
-not_full_treble(`set_prop(adb_enable, exported_system_radio_prop);')
 
 allow adb_enable vendor_shell_exec:file rx_file_perms;
 not_full_treble(`allow adb_enable shell_exec:file rx_file_perms;')
