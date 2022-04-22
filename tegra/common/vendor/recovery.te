@@ -36,7 +36,4 @@ recovery_only(`
 
   # Allow recovery to read OTA properties
   get_prop(recovery, vendor_ota_prop)
-
-  # Enable adb in recovery kernel
-  set_prop(recovery, ffs_prop)
 ')
