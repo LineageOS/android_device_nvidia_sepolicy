@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6641cd83_3d9bae3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-04-26T07:06:53Z",
+      "side": 1,
+      "message": "Verified on jetson_cv. Boot fails without this.",
+      "revId": "5600425ccf4135e78896b8c8fe05914f13d7579f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
