@@ -326,6 +326,7 @@
 /(vendor|system/vendor)/firmware/gv11b(/.*)?		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/gralloc.tegra.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/vulkan.tegra.so		u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/android.hardware.graphics.common-V1-ndk_platform.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libglcore.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libndkbinderutil.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libnvblit.so		u:object_r:same_process_hal_file:s0
