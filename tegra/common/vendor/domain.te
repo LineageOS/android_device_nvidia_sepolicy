@@ -42,3 +42,5 @@ allow { domain -coredomain -ephemeral_app -isolated_app -mediaprovider -untruste
 
 allow domain sysfs_type:dir search;
 allow domain sysfs_type:lnk_file { getattr read };
+
+dontaudit domain hal_keymaster_tegra_exec:file { getattr read };
