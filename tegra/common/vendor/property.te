@@ -30,7 +30,7 @@ vendor_internal_prop(udc_prop);
 vendor_internal_prop(power_button_recovery_prop);
 
 # darcy convertible usb port mode
-vendor_public_prop(usb_mode_prop);
+system_public_prop(usb_mode_prop);
 
 # AB OTA properties
 vendor_public_prop(vendor_ota_prop);
