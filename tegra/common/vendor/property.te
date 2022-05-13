@@ -33,6 +33,7 @@ type power_button_recovery_prop, property_type;
 
 # darcy convertible usb port mode
 type usb_mode_prop, property_type;
+full_treble_only(`typeattribute usb_mode_prop extended_core_property_type;')
 
 # AB OTA properties
 type vendor_ota_prop, property_type;
