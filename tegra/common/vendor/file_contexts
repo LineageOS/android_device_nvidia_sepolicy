@@ -258,7 +258,6 @@
 /system/bin/cac_log_dumper		u:object_r:cac_log_dumper_exec:s0
 /system/bin/charon		u:object_r:charon_exec:s0
 /system/bin/setup_fs		u:object_r:setup_fs_exec:s0
-(/system)?/vendor/bin/adbenable.sh		u:object_r:adb_enable_exec:s0
 (/system)?/vendor/bin/config_media.sh		u:object_r:config_media_exec:s0
 (/system)?/vendor/bin/ctload		u:object_r:ctload_exec:s0
 (/system)?/vendor/bin/cyload		u:object_r:cyupdate_exec:s0
