@@ -191,6 +191,7 @@
 /sys/devices/platform(/.*)?		u:object_r:sysfs_device_platform:s0
 /sys/devices/psy_extcon_ac_adaptor/power_supply(/.*)?		u:object_r:sysfs_power_supply:s0
 /sys/devices/pwm-fan(/.*)?		u:object_r:sysfs_pwm_fan:s0
+/sys/devices/platform/pwm-fan[0-9]+(/.*)?	u:object_r:sysfs_pwm_fan:s0
 /sys/devices/pwm-leds/leds/led_lightbar/brightness		u:object_r:sysfs_lightbar:s0
 /sys/devices/pwm_regulators/pwm_regulators:pwm-regulator@[0-9]+/regulator/regulator\.[0-9]+/name		u:object_r:sysfs_regulator_name:s0
 /sys/devices/regulators/regulators:regulator@[0-9]+/regulator/regulator\.[0-9]+/name		u:object_r:sysfs_regulator_name:s0
