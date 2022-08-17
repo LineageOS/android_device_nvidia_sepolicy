@@ -188,9 +188,6 @@ type surfaceflinger_fc, file_type;
 # /mnt/factory
 type factory_file, file_type;
 
-# Needed to mount fuseblk filesystem
-type fuseblk, sdcard_type, fs_type, mlstrustedobject;
-
 # /sys/devices/platform/tegra.*i2c\.[0-9]+(/.*)?
 # /sys/devices/platform/[0-9a-f]+\.i2c(/.*)?
 type sysfs_nvi2c, fs_type, sysfs_type, mlstrustedobject;

@@ -17,10 +17,6 @@ allow_use_phs(appdomain)
 allow { appdomain -ephemeral_app -isolated_app } sysfs_gpu:file r_file_perms;
 allow appdomain sysfs_mmc_host:dir search;
 
-# Access external card
-allow { appdomain -ephemeral_app -isolated_app } fuseblk:dir r_dir_perms;
-allow { appdomain -ephemeral_app -isolated_app } fuseblk:file rw_file_perms;
-
 # Access to radio_data_file
 allow appdomain radio_data_file:dir getattr;
 
