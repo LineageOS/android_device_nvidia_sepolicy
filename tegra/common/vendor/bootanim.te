@@ -19,7 +19,7 @@ hal_client_domain(bootanim, hal_cpl_service_common)
 allow bootanim self:process execmem;
 
 # Allow GL to access ptimer_scale_factor
-allow bootanim sysfs_gpu:file r_file_perms;
+allow bootanim sysfs_gpu_ptimer:file r_file_perms;
 
 # Allow running bootanim with the OpenGL ES1 SW renderer (libGLES_android)
 # in pre-silicon and bringup testing.
