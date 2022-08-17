@@ -70,3 +70,6 @@ type vendor_debug_prop, property_type;
 type vendor_tee_prop, property_type;
 type vendor_vold_prop, property_type;
 type vendor_wifi_prop, property_type;
+
+# For ro.vendor.bt.bdaddr_path
+typ vendor_bdaddr_prop, property_type;
