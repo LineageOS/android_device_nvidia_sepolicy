@@ -15,13 +15,6 @@
 # Scripts
 /(vendor|system/vendor)/bin/bt_loader\.sh                                        u:object_r:bt_loader_exec:s0
 
-# Source built HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service-nvidia         u:object_r:hal_light_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.0-service\.tegra        u:object_r:hal_health_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.0-service\.tegra_nobatt u:object_r:hal_health_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.memtrack@1\.0-service-nvidia      u:object_r:hal_memtrack_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.0-service-nvidia       u:object_r:hal_thermal_default_exec:s0
-
 # RTL Bluetooth/Wifi Firmware
 /vendor/firmware/rtl.*_config			u:object_r:vendor_firmware_wifi_file:s0
 /vendor/firmware/rtl.*_fw			u:object_r:vendor_firmware_wifi_file:s0
