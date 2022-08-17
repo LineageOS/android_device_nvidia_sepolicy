@@ -361,3 +361,11 @@
 /(vendor|system/vendor)/lib(64)?/vendor.nvidia.hardware.cpl.tools@1.0.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/vendor.nvidia.hardware.cpl.service_common@1.0.so	u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/vendor.nvidia.hardware.phs@1.0.so		u:object_r:same_process_hal_file:s0
+
+# Lineage additions that are not Lineage specific
+# Source built HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service-nvidia         u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.0-service\.tegra        u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.0-service\.tegra_nobatt u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.memtrack@1\.0-service-nvidia      u:object_r:hal_memtrack_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.0-service-nvidia       u:object_r:hal_thermal_default_exec:s0
