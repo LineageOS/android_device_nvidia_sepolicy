@@ -36,7 +36,7 @@
 /sys/kernel/debug/cpuidle_t210/fast_cluster_states_enable	u:object_r:debugfs_cluster:s0
 
 # Nodes used by GL driver
-/sys/devices/platform/gpu\.0/ptimer_scale_factor	u:object_r:sysfs_gpu:s0
+/sys/devices/platform/gpu\.0/ptimer_scale_factor	u:object_r:sysfs_gpu_ptimer:s0
 
 # GPU power knobs exposed to system app
 /sys/devices/platform/gpu\.0/(.*)_enable		u:object_r:sysfs_gpu_power_knobs:s0
