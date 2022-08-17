@@ -1,5 +1,3 @@
-ro.vendor.bt.bdaddr_path       u:object_r:vendor_bdaddr_prop:s0
-
 ro.vendor.nv.usb.		u:object_r:vendor_usb_prop:s0
 
 ro.lineage.tegraid		u:object_r:exported_default_prop:s0

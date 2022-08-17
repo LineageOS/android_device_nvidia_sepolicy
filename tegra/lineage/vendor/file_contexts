@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Scripts
-/(vendor|system/vendor)/bin/bt_loader\.sh                                        u:object_r:bt_loader_exec:s0
-
 # RTL Bluetooth/Wifi Firmware
 /vendor/firmware/rtl.*_config			u:object_r:vendor_firmware_wifi_file:s0
 /vendor/firmware/rtl.*_fw			u:object_r:vendor_firmware_wifi_file:s0
