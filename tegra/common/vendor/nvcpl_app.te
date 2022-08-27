@@ -36,6 +36,8 @@ allow nvcpl_app mount_service:service_manager find;
 allow nvcpl_app content_service:service_manager find;
 allow nvcpl_app device_identifiers_service:service_manager find;
 
+allow nvcpl_app hal_graphics_display_hwservice:hwservice_manager find;
+
 allow nvcpl_app hal_power_tegra:binder call;
 
 # ==== START sysfs rules =====
@@ -80,5 +82,7 @@ allow nvcpl_app sysfs_thermal_fan:file rw_file_perms;
 
 allow nvcpl_app system_app_data_file:{ file lnk_file } create_file_perms;
 allow nvcpl_app system_app_data_file:dir create_dir_perms;
+
+allow nvcpl_app cgroup:file write;
 
 get_prop(nvcpl_app, powerhal_prop)
