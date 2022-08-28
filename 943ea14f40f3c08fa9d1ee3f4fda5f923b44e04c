@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20b87690_2575ce62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23886
+      },
+      "writtenOn": "2022-08-28T03:55:03Z",
+      "side": 1,
+      "message": "Fixes:\n08-27 10:16:43.572  2844  2844 E SELinux : avc:  denied  { find } for interface\u003dvendor.nvidia.hardware.graphics.display::INvDisplay sid\u003du:r:nvcpl_app:s0 pid\u003d24130 scontext\u003du:r:nvcpl_app:s0 tcontext\u003du:object_r:hal_graphics_display_hwservice:s0 tclass\u003dhwservice_manager permissive\u003d0\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: FATAL EXCEPTION: update NV_ALLM_MODE_SUPPORT\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: Process: com.nvidia.NvCPLSvc, PID: 24130\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: java.util.NoSuchElementException\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: \tat android.os.HwBinder.getService(Native Method)\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: \tat android.os.HwBinder.getService(HwBinder.java:83)\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: \tat b.a.a.b.a.a.d.a(:1)\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: \tat com.nvidia.NvCPLSvc.q.run(Unknown Source:0)\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: \tat android.os.Handler.handleCallback(Handler.java:938)\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: \tat android.os.Handler.dispatchMessage(Handler.java:99)\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: \tat android.os.Looper.loop(Looper.java:223)\n08-27 10:16:43.573 24130 24155 E AndroidRuntime: \tat android.os.HandlerThread.run(HandlerThread.java:67)\n\nand \n\navc: denied { write } for name\u003d\"tasks\" dev\u003d\"cgroup\" ino\u003d20 scontext\u003du:r:nvcpl_app:s0 tcontext\u003du:object_r:cgroup:s0 tclass\u003dfile permissive\u003d0",
+      "revId": "943ea14f40f3c08fa9d1ee3f4fda5f923b44e04c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
