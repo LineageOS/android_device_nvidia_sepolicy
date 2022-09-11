@@ -16,6 +16,24 @@
       "message": "This was moved from https://review.lineageos.org/q/I429ebbb0ac2eb4ee459f78e2fbe24791ddd03f74\n\nI\u0027ve created a single label for all files under /vendor/firmware. I\u0027m assuming the kernel should always have read access to those files, so having labels for every new added firmware seems like a maintenance overhead. Let me know if I should revert and create a new label specific to the intel firmware.\n\nAlso enabled access to lspci for lkm_loader and gave access to net_bind_service to rfcomm.ko (which will be built after https://review.lineageos.org/q/I33d72d46acaa9b493a623dcb76bf8cadbe135471)",
       "revId": "4aea1e7e6be9682ad3390ba2f45e725ef72d5410",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ba12d38_6270d79f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-09-11T14:25:16Z",
+      "side": 1,
+      "message": "Firmware files are accessed both from kernel and userspace, specific labels are needed",
+      "parentUuid": "274ea3f4_96f59131",
+      "revId": "4aea1e7e6be9682ad3390ba2f45e725ef72d5410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
