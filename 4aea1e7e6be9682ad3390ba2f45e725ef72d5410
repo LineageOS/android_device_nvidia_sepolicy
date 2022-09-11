@@ -34,6 +34,24 @@
       "parentUuid": "274ea3f4_96f59131",
       "revId": "4aea1e7e6be9682ad3390ba2f45e725ef72d5410",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9124dee2_1b8ad693",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31706
+      },
+      "writtenOn": "2022-09-11T14:56:52Z",
+      "side": 1,
+      "message": "Restored firmware-specific labels and added new labels for iwlwifi/ibt firmware",
+      "parentUuid": "0ba12d38_6270d79f",
+      "revId": "4aea1e7e6be9682ad3390ba2f45e725ef72d5410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
