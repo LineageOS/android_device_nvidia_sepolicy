@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e3ac7df_5f0f7afa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31706
+      },
+      "writtenOn": "2022-09-11T21:03:45Z",
+      "side": 1,
+      "message": "As requested in discord, I\u0027ve added bluetooth and wifi firmware under the vendor_firmware_wifi_file label",
+      "revId": "5a3ffecb83b8c0098c5b8118b0ab8d47379f8f79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
