@@ -19,8 +19,9 @@ dontaudit kernel device:dir { write create add_name remove_name rmdir };
 dontaudit kernel device:{chr_file blk_file } { create setattr getattr unlink };
 dontaudit kernel self:capability mknod;
 
-# allow kernel to read iM501 firmware
-allow kernel vendor_firmware_im501_file:file r_file_perms;
+# allow kernel to access any vendor firmware
+allow kernel vendor_firmware_file:file r_file_perms;
+allow kernel vendor_firmware_file:dir search;
 
-allow kernel vendor_firmware_gpu_file:file r_file_perms;
-allow kernel vendor_firmware_gpu_file:dir {getattr search};
+# used by rfcomm.ko
+allow kernel self:capability net_bind_service;

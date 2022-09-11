@@ -34,3 +34,7 @@ allow lkm_loader proc_brcmfmac_pcie:file {open read};
 allow lkm_loader sysfs_brcmfmac_pcie:file {open read};
 allow lkm_loader mnt_vendor_file:dir r_dir_perms;
 allow lkm_loader kernel:process setsched;
+allow lkm_loader sysfs:dir { open read };
+allow lkm_loader sysfs:file { open read };
+allow lkm_loader sysfs_pci_device:dir { open read };
+allow lkm_loader sysfs_pci_device:file { open read };

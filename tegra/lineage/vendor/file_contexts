@@ -23,9 +23,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.0-service-nvidia       u:object_r:hal_thermal_default_exec:s0
 
 # RTL Bluetooth/Wifi Firmware
-/vendor/firmware/rtl.*_config			u:object_r:vendor_firmware_wifi_file:s0
-/vendor/firmware/rtl.*_fw			u:object_r:vendor_firmware_wifi_file:s0
-/vendor/firmware/rtl.*_settings\.bin		u:object_r:vendor_firmware_wifi_file:s0
 
 # Sysfs paths
 /sys/firmware/devicetree/base/chosen/plugin-manager/cvm                             u:object_r:sysfs_board:s0
