@@ -24,3 +24,8 @@ allow kernel vendor_firmware_im501_file:file r_file_perms;
 
 allow kernel vendor_firmware_gpu_file:file r_file_perms;
 allow kernel vendor_firmware_gpu_file:dir {getattr search};
+allow kernel vendor_firmware_iwlwifi_file:file r_file_perms;
+allow kernel vendor_firmware_ibt_file:file r_file_perms;
+
+# used by rfcomm.ko
+allow kernel self:capability net_bind_service;

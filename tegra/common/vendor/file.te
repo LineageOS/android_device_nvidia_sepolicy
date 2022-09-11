@@ -94,6 +94,8 @@ type sysfs_brcmfmac_pcie, fs_type, sysfs_type;
 # /(vendor|system/vendor)/firmware(/.*)
 type vendor_firmware_wifi_file, file_type, vendor_file_type;
 type vendor_firmware_im501_file, file_type, vendor_file_type;
+type vendor_firmware_iwlwifi_file, file_type, vendor_file_type;
+type vendor_firmware_ibt_file, file_type, vendor_file_type;
 
 # /data/nvcam
 type nvcam_data_file, file_type, data_file_type;
