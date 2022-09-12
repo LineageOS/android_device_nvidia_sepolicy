@@ -22,6 +22,30 @@
       },
       "revId": "d0c28efb8beb03d2dd580adf8712d6d2167736fc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d4c74627_2c323661",
+        "filename": "t210/common/vendor/lkm_loader.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-09-12T23:01:07Z",
+      "side": 1,
+      "message": "I suspect what\u0027s going on is that lspci needs to iterate on the dir, so whatever :dir traversal needs is the important part. But I\u0027m not actively testing, so I can\u0027t confirm that. But yes, agreed in general that granting global sysfs, even just read, is too much.",
+      "parentUuid": "5d9fd1af_e4757cbc",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 42
+      },
+      "revId": "d0c28efb8beb03d2dd580adf8712d6d2167736fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
