@@ -46,6 +46,30 @@
       },
       "revId": "d0c28efb8beb03d2dd580adf8712d6d2167736fc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04728074_78f22eb0",
+        "filename": "t210/common/vendor/lkm_loader.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 31706
+      },
+      "writtenOn": "2022-09-18T13:15:45Z",
+      "side": 1,
+      "message": "I\u0027ve addressed on the latest patch, created a label for /sys/bus/pci/*",
+      "parentUuid": "d4c74627_2c323661",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 42
+      },
+      "revId": "d0c28efb8beb03d2dd580adf8712d6d2167736fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
