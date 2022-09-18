@@ -39,6 +39,9 @@ type sysfs_gps_wake, fs_type, sysfs_type;
 # /sys/devices/platform/tegra-ehci../...
 type sysfs_bus_usb, fs_type, sysfs_type;
 
+# /sys/bus/pci/*
+type sysfs_bus_pci, fs_type, sysfs_type;
+
 # /sys/devies/aon_shub/...
 type sysfs_iio, fs_type, sysfs_type, mlstrustedobject;
 
