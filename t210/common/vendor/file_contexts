@@ -32,9 +32,6 @@
 # storage daemon
 (/system)?/vendor/bin/storageproxyd	u:object_r:tee_exec:s0
 
-# lkm
-/vendor/bin/lkm_loader.sh		u:object_r:lkm_loader_exec:s0
-
 # Cluster debugfs
 /sys/kernel/debug/cpuidle_t210/fast_cluster_states_enable	u:object_r:debugfs_cluster:s0
 

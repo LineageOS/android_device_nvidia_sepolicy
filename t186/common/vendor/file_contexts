@@ -164,9 +164,6 @@
 /sys/devices/13e10000.host1x/152[0-2]0000.nvdisplay/smartdimmer(/.*)	u:object_r:sysfs_smartdimmer:s0
 /sys/devices/13e10000.host1x/152[0-2]0000.nvdisplay/cmu_enable		u:object_r:sysfs_cmu:s0
 
-# lkm - loadable kernel module service
-/vendor/bin/lkm_loader.sh	u:object_r:lkm_loader_exec:s0
-
 # storage daemon
 (/system)?/vendor/bin/storageproxyd	u:object_r:tee_exec:s0
 
