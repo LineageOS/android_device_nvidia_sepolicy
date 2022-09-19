@@ -377,6 +377,7 @@
 
 # lkm
 /vendor/bin/lkm_loader.sh		u:object_r:lkm_loader_exec:s0
+/vendor/bin/lkm_loader_target.sh	u:object_r:lkm_loader_exec:s0
 
 # Scripts
 /(vendor|system/vendor)/bin/bt_loader\.sh                                        u:object_r:bt_loader_exec:s0
