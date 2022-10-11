@@ -268,6 +268,7 @@
 (/system)?/vendor/bin/nvphsd_setup.sh		u:object_r:nvphsd_setup_exec:s0
 (/system)?/vendor/bin/nvphsd		u:object_r:nvphsd_exec:s0
 (/system)?/vendor/bin/nvpmodel		u:object_r:nvpmodel_exec:s0
+(/system)?/vendor/bin/l4t/nvpmodel	u:object_r:nvpmodel_exec:s0
 (/system)?/vendor/bin/pbc2		u:object_r:pbc_exec:s0
 (/system)?/vendor/bin/pbc		u:object_r:pbc_exec:s0
 (/system)?/vendor/bin/prcurlservice		u:object_r:prcurlservice_exec:s0
