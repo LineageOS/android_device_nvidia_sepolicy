@@ -20,6 +20,7 @@ init_daemon_domain(nvpmodel)
 allow nvpmodel sysfs_devices_system_cpu:file rw_file_perms;
 allow nvpmodel sysfs_gpu_freq_limit:file rw_file_perms;
 allow nvpmodel sysfs_gpu_tpc:file rw_file_perms;
+allow nvpmodel sysfs_gpu_power:file rw_file_perms;
 allow nvpmodel sysfs_nvpmodel:file rw_file_perms;
 allow nvpmodel nvpmodel_data:dir ra_dir_perms;
 allow nvpmodel nvpmodel_data:file create_file_perms;
