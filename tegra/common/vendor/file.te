@@ -18,6 +18,9 @@ type ntfs, sdcard_type, fs_type, mlstrustedobject;
 # /sys/power/sysedp/...
 type sysfs_sysedp, fs_type, sysfs_type;
 
+# GPU power control sysfs
+type sysfs_gpu_power, fs_type, sysfs_type;
+
 # GPU devfreq sysfs
 type sysfs_gpu_freq_limit, fs_type, sysfs_type;
 

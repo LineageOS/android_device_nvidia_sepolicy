@@ -170,6 +170,9 @@
 # rpmb device
 /dev/block/platform/3460000.sdhci/mmcblk0rpmb		u:object_r:rpmb_block_device:s0
 
+# GPU power control for nvpmodel
+/sys/devices/17000000.gp10b/power/control	u:object_r:sysfs_gpu_power:s0
+
 # GPU available frequency devfreq sysfs
 /sys/devices/17000000.gp10b/devfreq/17000000.gp10b/available_frequencies	u:object_r:sysfs_devfreq:s0
 
