@@ -1,0 +1,3 @@
+# led lightbar
+/sys/devices/7000c000.i2c/i2c-0/0-0009/leds/led_lightbar/brightness		u:object_r:sysfs_lightbar:s0
+/sys/devices/7000c000.i2c/i2c-0/0-0009/leds/led_lightbar/effects		u:object_r:sysfs_lightbar:s0
