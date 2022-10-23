@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f43b3f4b_264c46b9",
+        "filename": "tegra/common/vendor/file.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 227,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-10-23T05:30:40Z",
+      "side": 1,
+      "message": "or just use the asp label of sysfs_gpu and drop this?",
+      "range": {
+        "startLine": 225,
+        "startChar": 0,
+        "endLine": 227,
+        "endChar": 43
+      },
+      "revId": "8b97aa24cc33833bd563d140bbb2bab2a2b847bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
