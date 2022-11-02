@@ -46,6 +46,30 @@
       },
       "revId": "8b97aa24cc33833bd563d140bbb2bab2a2b847bf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "144f2b0c_ee43b6b9",
+        "filename": "tegra/common/vendor/file.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 227,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-11-02T03:29:59Z",
+      "side": 1,
+      "message": "For doc purposes. Yes, the nvidia sysfs_gpu label is used for different things than the new aosp label.",
+      "parentUuid": "68d43a24_d0d3588c",
+      "range": {
+        "startLine": 225,
+        "startChar": 0,
+        "endLine": 227,
+        "endChar": 43
+      },
+      "revId": "8b97aa24cc33833bd563d140bbb2bab2a2b847bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
