@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9fde26e7_2c47849b",
+        "filename": "sepolicy.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-11-21T20:25:18Z",
+      "side": 1,
+      "message": "?",
+      "range": {
+        "startLine": 18,
+        "startChar": 7,
+        "endLine": 18,
+        "endChar": 11
+      },
+      "revId": "db4e24d6b85f2acf7ed00fd579774c69c0a9e190",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
