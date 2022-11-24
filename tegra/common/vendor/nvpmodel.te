@@ -27,6 +27,7 @@ allow nvpmodel nvpmodel_data:file create_file_perms;
 allow nvpmodel sysfs_devfreq:file r_file_perms;
 allow nvpmodel sysfs:file getattr;
 allow nvpmodel sysfs_device_type:file r_file_perms;
+allow nvpmodel kmsg_debug_device:chr_file { w_file_perms ioctl };
 
 # Allow nvpmodel intermediary script to run the l4t binary
 allow nvpmodel nvpmodel_exec:file execute_no_trans;
