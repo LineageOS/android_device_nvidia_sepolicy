@@ -151,6 +151,7 @@ persist.vendor.tegra.		u:object_r:tegra_graphics_prop:s0
 persist.vendor.sys.tegra.	u:object_r:tegra_graphics_prop:s0
 vendor.sys                      u:object_r:tegra_graphics_prop:s0
 persist.vendor.sys              u:object_r:tegra_graphics_prop:s0
+ro.vendor.sys                   u:object_r:tegra_graphics_prop:s0
 
 # HDCP SRM properties
 vendor.hdcp.srm.			u:object_r:hdcp_srm_prop:s0
