@@ -42,6 +42,10 @@
 /dev/block/platform/3400000.sdhci/by-name/odm		u:object_r:system_block_device:s0
 /dev/block/platform/3400000.sdhci/by-name/odm_[ab]	u:object_r:system_block_device:s0
 /dev/block/platform/3400000.sdhci/by-name/super		u:object_r:super_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/vbmeta	u:object_r:system_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/vbmeta_[ab]	u:object_r:system_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/vbmeta_system		u:object_r:system_block_device:s0
+/dev/block/platform/3400000.sdhci/by-name/vbmeta_system_[ab]	u:object_r:system_block_device:s0
 
 # 4th sdhci device, normally emmc
 /dev/block/platform/3460000.sdhci/by-name/UDA		u:object_r:userdata_block_device:s0
@@ -68,6 +72,10 @@
 /dev/block/platform/3460000.sdhci/by-name/odm		u:object_r:system_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/odm_[ab]	u:object_r:system_block_device:s0
 /dev/block/platform/3460000.sdhci/by-name/super		u:object_r:super_block_device:s0
+/dev/block/platform/3460000.sdhci/by-name/vbmeta	u:object_r:system_block_device:s0
+/dev/block/platform/3460000.sdhci/by-name/vbmeta_[ab]	u:object_r:system_block_device:s0
+/dev/block/platform/3460000.sdhci/by-name/vbmeta_system		u:object_r:system_block_device:s0
+/dev/block/platform/3460000.sdhci/by-name/vbmeta_system_[ab]	u:object_r:system_block_device:s0
 
 # UFS
 /dev/block/platform/2450000.ufshci/by-name/UDA			u:object_r:userdata_block_device:s0
@@ -94,6 +102,10 @@
 /dev/block/platform/2450000.ufshci/by-name/odm			u:object_r:system_block_device:s0
 /dev/block/platform/2450000.ufshci/by-name/odm_[ab]		u:object_r:system_block_device:s0
 /dev/block/platform/2450000.ufshci/by-name/super		u:object_r:super_block_device:s0
+/dev/block/platform/2450000.ufshci/by-name/vbmeta		u:object_r:system_block_device:s0
+/dev/block/platform/2450000.ufshci/by-name/vbmeta_[ab]		u:object_r:system_block_device:s0
+/dev/block/platform/2450000.ufshci/by-name/vbmeta_system	u:object_r:system_block_device:s0
+/dev/block/platform/2450000.ufshci/by-name/vbmeta_system_[ab]	u:object_r:system_block_device:s0
 
 #bootloader block device
 /dev/block/platform/3460000.sdhci/by-name/BCT			u:object_r:bootloader_block_device:s0
