@@ -101,6 +101,7 @@ set_prop(system_app, usb_mode_prop);
 allow system_app sysfs_usb_convertible:file rw_file_perms;
 allow system_app sysfs_usb_convertible:lnk_file { read write };
 allow system_app sysfs_extcon_name:file r_file_perms;
+allow system_app sysfs_audio_aux:file r_file_perms;
 allow system_app sysfs_class_extcon:dir r_dir_perms;
 
 # nvfeedback to use dumpstate in order to collect full bugreport
