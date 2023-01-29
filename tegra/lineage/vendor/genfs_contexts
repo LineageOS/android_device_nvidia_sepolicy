@@ -1,4 +1,5 @@
 # Sysfs nodes
+genfscon sysfs /firmware/devicetree/base/chosen/nvidia,safe_mode_adb                       u:object_r:sysfs_safe_mode_adb:s0
 genfscon sysfs /firmware/devicetree/base/chosen/plugin-manager/cvm                         u:object_r:sysfs_board:s0
 genfscon sysfs /firmware/devicetree/base/chosen/proc-board/id                              u:object_r:sysfs_board:s0
 genfscon sysfs /firmware/devicetree/base/chosen/proc-board/name                            u:object_r:sysfs_board:s0
