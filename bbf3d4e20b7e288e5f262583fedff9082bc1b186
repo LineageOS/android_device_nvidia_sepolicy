@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "812851c5_b04df62e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-01-30T03:13:14Z",
+      "side": 1,
+      "message": "Verified that custom init is able to read the safe mode adb node.",
+      "revId": "bbf3d4e20b7e288e5f262583fedff9082bc1b186",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
