@@ -20,6 +20,9 @@ init_daemon_domain(hal_graphics_composer_tegra)
 
 allow_use_phs(hal_graphics_composer_tegra)
 
+# Allow hal_graphics_composer_tegra access to gpu props
+get_prop(hal_graphics_composer_tegra, tegra_graphics_prop)
+
 # Allow hal_graphics_composer_tegra to access tsec
 allow hal_graphics_composer_tegra tsec_device:chr_file rw_file_perms;
 
