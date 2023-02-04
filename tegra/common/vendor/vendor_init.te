@@ -17,3 +17,5 @@ set_prop(vendor_init, hdcp_srm_prop)
 allow vendor_init debugfs_cluster:file rw_file_perms;
 
 get_prop(vendor_init, vendor_bdaddr_prop)
+
+set_prop(vendor_init, vendor_usb_prop)
