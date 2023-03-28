@@ -200,6 +200,9 @@ vendor.cameraPerformanceTracker		u:object_r:vendor_camera_prop:s0
 vendor.nvcamera.			u:object_r:vendor_camera_prop:s0
 vendor.tegra.nvcamera.			u:object_r:vendor_camera_prop:s0
 
+# keymaster
+ro.boot.secureos	u:object_r:exported_default_prop:s0 exact string
+
 #nvmedia vendor properties
 persist.vendor.tegra.tvmr.buffer.logs   u:object_r:nvmedia_prop:s0
 persist.vendor.tegra.tvmr.seeking.logs  u:object_r:nvmedia_prop:s0
