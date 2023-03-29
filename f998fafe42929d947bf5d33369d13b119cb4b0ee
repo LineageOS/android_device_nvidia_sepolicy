@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb4f469e_fb45a07c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-03-29T00:42:54Z",
+      "side": 1,
+      "message": "Verified on jetson_cv and mdarcy. Property continues to be set as expected when passed in bootargs. Property is set by vendor custom init on jetson_cv, including on gsi.",
+      "revId": "f998fafe42929d947bf5d33369d13b119cb4b0ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
