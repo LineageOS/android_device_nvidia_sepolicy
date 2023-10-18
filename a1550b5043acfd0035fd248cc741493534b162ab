@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a66c604d_92f5d842",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-10-18T01:34:27Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_device_nvidia_sepolicy/blob/lineage-20/tegra/common/vendor/domain.te#L21\nThis should already be allowed. If it\u0027s not, I\u0027d really like to know why.",
+      "revId": "a1550b5043acfd0035fd248cc741493534b162ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
