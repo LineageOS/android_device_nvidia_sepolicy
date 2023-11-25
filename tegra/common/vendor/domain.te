@@ -18,7 +18,7 @@ r_dir_file(domain -isolated_app, sysfs_tegrafuse_aid)
 
 # Allow all domains to read surfacefinger property
 get_prop(domain -coredomain, hwc_prop)
-get_prop(domain -coredomain, tegra_graphics_prop)
+get_prop(domain tegra_graphics_prop)
 
 # Allow all domains to read vendor debug properties
 get_prop(domain -coredomain, vendor_debug_prop)
