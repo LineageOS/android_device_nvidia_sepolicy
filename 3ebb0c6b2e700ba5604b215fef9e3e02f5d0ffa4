@@ -22,6 +22,30 @@
       },
       "revId": "3ebb0c6b2e700ba5604b215fef9e3e02f5d0ffa4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc961dff_4de75aef",
+        "filename": "tegra/common/vendor/domain.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-11-25T22:13:53Z",
+      "side": 0,
+      "message": "Uhhhh, yes it is. How the heck is this not failing to compile? \u003e\u003c",
+      "parentUuid": "fc4b39f7_aef51b56",
+      "range": {
+        "startLine": 21,
+        "startChar": 27,
+        "endLine": 21,
+        "endChar": 28
+      },
+      "revId": "3ebb0c6b2e700ba5604b215fef9e3e02f5d0ffa4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
