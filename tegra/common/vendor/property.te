@@ -59,7 +59,7 @@ vendor_internal_prop(vendor_usb_prop);
 vendor_public_prop(vendor_camera_prop);
 vendor_internal_prop(vendor_bt_prop);
 vendor_internal_prop(nvmedia_prop);
-vendor_internal_prop(tegra_graphics_prop);
+vendor_public_prop(tegra_graphics_prop);
 vendor_internal_prop(factoryhal_prop);
 vendor_internal_prop(gamestreaming_prop);
 vendor_internal_prop(mediavndsvc_prop);
