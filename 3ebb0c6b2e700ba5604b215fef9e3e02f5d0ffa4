@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc4b39f7_aef51b56",
+        "filename": "tegra/common/vendor/domain.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-11-25T21:18:39Z",
+      "side": 0,
+      "message": "The comma is supposed to stay?",
+      "range": {
+        "startLine": 21,
+        "startChar": 27,
+        "endLine": 21,
+        "endChar": 28
+      },
+      "revId": "3ebb0c6b2e700ba5604b215fef9e3e02f5d0ffa4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
