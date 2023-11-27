@@ -1,0 +1,2 @@
+persist.bluetooth.btsnoopsize	u:object_r:exported_bluetooth_prop:s0	exact
+ro.rfkilldisabled		u:object_r:exported_bluetooth_prop:s0	exact string
