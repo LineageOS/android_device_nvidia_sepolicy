@@ -319,6 +319,8 @@
 /vendor/firmware/brcmfmac4356-pcie.*		u:object_r:vendor_firmware_wifi_file:s0
 /vendor/firmware/fw_bcmdhd.*		u:object_r:vendor_firmware_wifi_file:s0
 /vendor/firmware/gm20b(/.*)?		u:object_r:vendor_firmware_gpu_file:s0
+/vendor/firmware/gp10b(/.*)?		u:object_r:vendor_firmware_gpu_file:s0
+/vendor/firmware/gv11b(/.*)?		u:object_r:vendor_firmware_gpu_file:s0
 /vendor/firmware/im501.*		u:object_r:vendor_firmware_im501_file:s0
 /vendor/firmware/nvram.*		u:object_r:vendor_firmware_wifi_file:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.audio@4\.0-service-msd		u:object_r:hal_audio_default_exec:s0
@@ -333,8 +335,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.usb@1\.1-service		u:object_r:hal_usb_tegra_exec:s0
 /(vendor|system/vendor)/bin/vendor\.nvidia\.hardware\.camera\.provider@2\.4-service		u:object_r:hal_camera_tegra_exec:s0
 /(vendor|system/vendor)/bin/vendor\.nvidia\.hardware\.sensors@1\.0-service		u:object_r:hal_sensors_tegra_exec:s0
-/(vendor|system/vendor)/firmware/gp10b(/.*)?		u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/firmware/gv11b(/.*)?		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/gralloc.tegra.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/vulkan.tegra.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/android.hardware.graphics.common-V1-ndk.so		u:object_r:same_process_hal_file:s0
