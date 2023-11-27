@@ -42,6 +42,9 @@ allow wifi_loader wifi_vendor_data_file:lnk_file { create_file_perms unlink };
 allow wifi_loader sysfs_brcmfmac_pcie:file r_file_perms;
 allow wifi_loader sysfs_brcmfmac_fwpath:file { getattr setattr };
 
+allow wifi_loader sysfs_bcmdhd_pcie:file r_file_perms;
+allow wifi_loader sysfs_wlan_fwpath:file { getattr setattr };
+
 # Allow wifi_loader to read a custom MAC address from /mnt/factory/<wifi>
 r_dir_file(wifi_loader, factory_file)
 
