@@ -23,6 +23,7 @@ define(`allow_use_phs', `
     binder_call(nvphsd, $1)
     binder_call($1, nvphsd)
     allow nvphsd $1:process signull;
+    allow $1 nvphsd_hwservice:hwservice_manager find;
 ')
 
 define(`r_file_perms_no_ioctl', `{ getattr open read map }')

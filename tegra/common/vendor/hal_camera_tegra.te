@@ -59,10 +59,6 @@ allow hal_camera_tegra device:dir r_dir_perms;
 # can route /dev/binder traffic to /dev/vndbinder
 vndbinder_use(hal_camera_tegra)
 
-# allow camera hal to talk to nvphsd
-allow_use_phs(hal_camera_tegra)
-allow hal_camera_tegra nvphsd_hwservice:hwservice_manager find;
-
 # allow camera hal to talk to graphics mapper hal
 # in android.hardware.camera.common@1.0
 allow hal_camera_tegra hal_graphics_mapper_hwservice:hwservice_manager find;

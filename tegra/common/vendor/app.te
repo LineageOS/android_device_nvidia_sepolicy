@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-allow_use_phs(appdomain)
+allow_use_phs({appdomain -isolated_app -untrusted_app_all})
 
 allow { appdomain -ephemeral_app -isolated_app } sysfs_gpu_ptimer:file r_file_perms;
 allow appdomain sysfs_mmc_host:dir search;

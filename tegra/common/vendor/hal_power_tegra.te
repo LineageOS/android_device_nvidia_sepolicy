@@ -26,9 +26,6 @@ hwbinder_use(hal_power_tegra)
 # allow powerhal to use phs
 allow_use_phs(hal_power_tegra)
 
-# allow powerhal to find the phs service through hwservice manager
-allow hal_power_tegra nvphsd_hwservice:hwservice_manager find;
-
 # allow powerhal access tegra cluster debugfs
 allow hal_power_tegra debugfs_cluster:file rw_file_perms;
 

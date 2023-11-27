@@ -45,7 +45,6 @@ binder_call(mediaserver, system_server)
 binder_use(mediaserver)
 
 allow_use_phs(mediaserver)
-allow mediaserver nvphsd_hwservice:hwservice_manager find;
 
 r_dir_file(mediaserver, factory_file)
 

@@ -45,7 +45,6 @@ allow system_server sysfs_nvi2c:{ file lnk_file } rw_file_perms;
 
 # phs
 allow_use_phs(system_server)
-allow system_server nvphsd_hwservice:hwservice_manager find;
 
 allow system_server proc_wmem_max_writable:file rw_file_perms;
 r_dir_file(system_server, factory_file)
