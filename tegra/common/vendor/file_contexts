@@ -188,6 +188,10 @@
 /sys/devices/platform/tegra-sata.*/ata1/host0/target.*/0.*/power/autosuspend_delay_ms		u:object_r:sysfs_sata:s0
 /sys/devices/platform/tegra-sata.*/ata1/host0/target.*/0.*/power/control		u:object_r:sysfs_sata:s0
 /sys/devices/platform/tegra-sata.*/ata1/power/control		u:object_r:sysfs_sata:s0
+/sys/devices/tegra-sata.*/ata1/host0/target.*/0.*/power/autosuspend_delay_ms		u:object_r:sysfs_sata:s0
+/sys/devices/tegra-sata.*/ata1/host0/target.*/0.*/power/control		u:object_r:sysfs_sata:s0
+/sys/devices/tegra-sata.*/ata1/power/control		u:object_r:sysfs_sata:s0
+/sys/devices/tegra-sata.*/ata1/host0/target.*/0.*/block/sd.*/queue/discard_max_bytes		u:object_r:sysfs_sata:s0
 /sys/devices/platform/tegra_usb_modem_power(/.*)?		u:object_r:sysfs_radio:s0
 /sys/devices/platform/tegra-xhci/.*/mode		u:object_r:sysfs_blake:s0
 /sys/devices/platform/tegra-xhci(/.*)?		u:object_r:sysfs_bus_usb:s0
