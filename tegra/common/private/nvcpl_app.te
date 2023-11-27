@@ -15,5 +15,7 @@ allow nvcpl_app content_service:service_manager find;
 allow nvcpl_app device_identifiers_service:service_manager find;
 allow nvcpl_app thermal_service:service_manager find;
 allow nvcpl_app game_service:service_manager find;
+allow nvcpl_app netstats_service:service_manager find;
+allow nvcpl_app content_capture_service:service_manager find;
 
 set_prop(nvcpl_app, system_prop)
