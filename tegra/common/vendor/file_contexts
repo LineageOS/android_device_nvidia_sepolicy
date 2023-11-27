@@ -158,6 +158,7 @@
 /sys/devices/c2a0000.rtc/rtc/rtc[0-9]/hctosys		u:object_r:sysfs_rtc:s0
 /sys/devices/extcon/extcon:disp-state(/.*)?		u:object_r:sysfs_audio_aux:s0
 /sys/devices/extcon/extcon:[^/]+/extcon/extcon[0-9]/name		u:object_r:sysfs_extcon_name:s0
+/sys/devices/extcon/extcon:[^/]+/extcon/extcon[0-9]/cable\.[0-9]/name		u:object_r:sysfs_extcon_name:s0
 /sys/devices/extcon/extcon:(virtual_id|usb_otg)/extcon/extcon[0-9]/state		u:object_r:sysfs_usb_convertible:s0
 /sys/devices/external-connection/external-connection:disp-state(/.*)?		u:object_r:sysfs_audio_aux:s0
 /sys/devices/external-connection/external-connection:extcon@[0-9]/extcon/extcon[0-9]/name		u:object_r:sysfs_extcon_name:s0

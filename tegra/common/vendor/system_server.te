@@ -135,7 +135,9 @@ hal_client_domain(system_server, hal_graphics_display)
 hal_client_domain(system_server, hal_graphics_composer)
 
 allow system_server sysfs_hdmi_audio:{ file lnk_file } r_file_perms;
+allow system_server sysfs_extcon_name:file r_file_perms;
 allow system_server sysfs_audio_aux:file r_file_perms;
+allow system_server sysfs_class_extcon:dir r_dir_perms;
 
 get_prop(system_server, userspace_reboot_exported_prop);
 get_prop(system_server, userspace_reboot_config_prop);
