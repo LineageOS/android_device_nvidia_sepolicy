@@ -72,3 +72,7 @@ allow surfaceflinger vrr_prop:file { r_file_perms_no_ioctl };
 
 # Allow SF access to mediacodec
 allow surfaceflinger mediacodec:fd use;
+
+# Don't audit SF trying to read graphics firmware
+dontaudit surfaceflinger vendor_firmware_gpu_file:file r_file_perms;
+dontaudit surfaceflinger vendor_firmware_gpu_file:dir {getattr search};
