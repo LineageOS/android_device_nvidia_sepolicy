@@ -72,3 +72,6 @@ allow hal_power_tegra sysfs:file  rw_file_perms;
 allow hal_power_tegra sysfs_class_backlight:dir search;
 
 dontaudit hal_power_tegra default_prop:file { open read getattr };
+
+# allow powerhal to write sata power control nodes
+allow hal_power_tegra sysfs_sata:file rw_file_perms;
