@@ -1,0 +1,15 @@
+recovery_only(`
+  allow fastbootd {
+    bootloader_block_device
+    rpmb_block_device
+  }:blk_file rw_file_perms;
+
+  # Boot control hal arch logic
+  allow fastbootd sysfs_device_type:file r_file_perms;
+  get_prop(fastbootd, vendor_ota_prop)
+  allow fastbootd sysfs_mmc_host:dir search;
+  allow fastbootd sysfs_mmc_host:file rw_file_perms;
+
+  # Fastbootd reads /sys/class/power_supply
+  allow fastbootd sysfs:dir r_dir_perms;
+')
