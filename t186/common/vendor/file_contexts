@@ -46,6 +46,8 @@
 /dev/block/platform/34[06]0000.sdhci/by-name/bootlogo(_b)?		u:object_r:bootloader_block_device:s0
 /dev/block/platform/34[06]0000.sdhci/by-name/kernel-dtb(_[ab])?		u:object_r:bootloader_block_device:s0
 /dev/block/platform/34[06]0000.sdhci/by-name/kernel-dtbo(_[ab])?	u:object_r:bootloader_block_device:s0
+/dev/block/platform/34[06]0000.sdhci/by-name/eks			u:object_r:bootloader_block_device:s0
+/dev/block/platform/34[06]0000.sdhci/by-name/NCT(_b)?			u:object_r:bootloader_block_device:s0
 
 /dev/block/platform/3270000.spi/mtdblock0				u:object_r:bootloader_block_device:s0
 
