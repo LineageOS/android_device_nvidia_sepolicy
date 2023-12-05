@@ -21,7 +21,37 @@
 /dev/imx132				u:object_r:camera_device:s0
 /dev/ov10823.*				u:object_r:camera_device:s0
 
+# Partitions
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/APP		u:object_r:system_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/CAC		u:object_r:cache_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/FCT		u:object_r:factorycalib_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/LNX		u:object_r:boot_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/MDA		u:object_r:metadata_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/MSC		u:object_r:misc_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/RP3		u:object_r:rpx_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/RP4		u:object_r:fscheck_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/SOS		u:object_r:recovery_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/UDA		u:object_r:userdata_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/vendor	u:object_r:system_block_device:s0
+
+/dev/block/platform/sdhci-tegra\.3/mmcblk0rpmb		u:object_r:rpmb_block_device:s0
+
+#bootloader block device
+/dev/block/mmcblk0		u:object_r:bootloader_block_device:s0
+/dev/block/mmcblk0boot[0-1]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/BPF		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/DTB		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/EBT		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/NCT		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/RBL		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/TBC		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/TBC-B		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/TOS		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/USP		u:object_r:bootloader_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/WB0		u:object_r:bootloader_block_device:s0
+
 # factory reset protection
+/dev/block/platform/sdhci-tegra\.3/by-name/RP6		u:object_r:frp_block_device:s0
 /dev/block/platform/sdhci-tegra\.3/by-name/RP2		u:object_r:frp_block_device:s0
 /dev/block/platform/tegra-sata\.0/by-name/RP2           u:object_r:frp_block_device:s0
 
