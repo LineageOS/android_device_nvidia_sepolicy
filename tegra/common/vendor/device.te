@@ -62,3 +62,6 @@ type im501_spi_device, dev_type;
 
 # /dev/im501_pcm
 type im501_pcm_device, dev_type;
+
+# dtb/dtbo partitions
+type dtb_block_device, dev_type;

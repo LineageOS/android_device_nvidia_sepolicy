@@ -29,6 +29,8 @@
 /dev/block/platform/34[06]0000.sdhci/by-name/super			u:object_r:super_block_device:s0
 /dev/block/platform/34[06]0000.sdhci/by-name/vbmeta(_[ab])?		u:object_r:system_block_device:s0
 /dev/block/platform/34[06]0000.sdhci/by-name/vbmeta_system(_[ab])?	u:object_r:system_block_device:s0
+/dev/block/platform/34[06]0000.sdhci/by-name/kernel-dtb(_[ab])?		u:object_r:dtb_block_device:s0
+/dev/block/platform/34[06]0000.sdhci/by-name/kernel-dtbo(_[ab])?	u:object_r:dtb_block_device:s0
 
 #bootloader block device
 /dev/block/mmcblk0							u:object_r:bootloader_block_device:s0
@@ -44,8 +46,6 @@
 /dev/block/platform/34[06]0000.sdhci/by-name/sce-fw(_b)?		u:object_r:bootloader_block_device:s0
 /dev/block/platform/34[06]0000.sdhci/by-name/sc7(_b)?			u:object_r:bootloader_block_device:s0
 /dev/block/platform/34[06]0000.sdhci/by-name/bootlogo(_b)?		u:object_r:bootloader_block_device:s0
-/dev/block/platform/34[06]0000.sdhci/by-name/kernel-dtb(_[ab])?		u:object_r:bootloader_block_device:s0
-/dev/block/platform/34[06]0000.sdhci/by-name/kernel-dtbo(_[ab])?	u:object_r:bootloader_block_device:s0
 /dev/block/platform/34[06]0000.sdhci/by-name/eks			u:object_r:bootloader_block_device:s0
 /dev/block/platform/34[06]0000.sdhci/by-name/NCT(_b)?			u:object_r:bootloader_block_device:s0
 
