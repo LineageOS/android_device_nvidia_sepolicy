@@ -24,6 +24,7 @@
 # Partitions
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/APP		u:object_r:system_block_device:s0
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/CAC		u:object_r:cache_block_device:s0
+/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/DTB		u:object_r:dtb_block_device:s0
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/FCT		u:object_r:factorycalib_block_device:s0
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/LNX		u:object_r:boot_block_device:s0
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/MDA		u:object_r:metadata_block_device:s0
@@ -40,7 +41,6 @@
 /dev/block/mmcblk0		u:object_r:bootloader_block_device:s0
 /dev/block/mmcblk0boot[0-1]	u:object_r:bootloader_block_device:s0
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/BPF		u:object_r:bootloader_block_device:s0
-/dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/DTB		u:object_r:bootloader_block_device:s0
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/EBT		u:object_r:bootloader_block_device:s0
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/NCT		u:object_r:bootloader_block_device:s0
 /dev/block/platform/(sdhci-tegra|tegra-sata|tegra-xhci)(\.[0-9])?/by-name/RBL		u:object_r:bootloader_block_device:s0
