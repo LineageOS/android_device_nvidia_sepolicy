@@ -61,6 +61,7 @@ ro.vendor.xudc.isochronous.enable	u:object_r:udc_prop:s0
 vendor.audio.                    u:object_r:audiohal_prop:s0
 persist.vendor.audio.            u:object_r:audiohal_prop:s0
 ro.vendor.audio.                 u:object_r:audiohal_ro_prop:s0
+af.resampler.quality             u:object_r:audio_config_prop:s0 exact int
 
 #used to enable adb over tcpip on port 5555 from Settings app
 persist.vendor.nvda.adb.tcp.enable      u:object_r:system_prop:s0
