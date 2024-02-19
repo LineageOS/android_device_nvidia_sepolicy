@@ -1,1 +1,3 @@
+r_dir_file(hal_health_default, sysfs_nvi2c)
 r_dir_file(hal_health_default, sysfs_power_supply)
+r_dir_file(hal_health_default, sysfs_serial)

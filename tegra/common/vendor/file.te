@@ -27,6 +27,9 @@ type sysfs_gpu_freq_limit, fs_type, sysfs_type;
 # GPU TPC sysfs
 type sysfs_gpu_tpc, fs_type, sysfs_type;
 
+# Serial sysfs
+type sysfs_serial, fs_type, sysfs_type;
+
 # /sys/devices/platform/tegra_usb_modem_power/...
 # /sys/devices/platform/sysedp_modem/...
 type sysfs_radio, fs_type, sysfs_type;
