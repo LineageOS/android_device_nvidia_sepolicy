@@ -393,3 +393,5 @@ persist.NV_OPENCL_ENABLE_PINNED_MEMCPY_PATH				u:object_r:exported_default_prop:
 persist.NV_OPENCL_MAX_PIN_SIZE						u:object_r:exported_default_prop:s0
 persist.NV_OPENCL_MIN_PIN_SIZE						u:object_r:exported_default_prop:s0
 persist.NV_OPENCL_PIN_THRESHOLD						u:object_r:exported_default_prop:s0
+
+ro.surface_flinger.use_frame_rate_api u:object_r:surfaceflinger_prop:s0
