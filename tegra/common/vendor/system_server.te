@@ -130,6 +130,8 @@ allow system_server hal_audio_default:file write;
 #mapper
 allow system_server nv_mapper_service:service_manager { find };
 
+r_dir_file(system_server, sysfs_serial)
+
 #HDMI service
 hal_client_domain(system_server, hal_graphics_display)
 hal_client_domain(system_server, hal_graphics_composer)
