@@ -76,3 +76,5 @@ allow surfaceflinger mediacodec:fd use;
 # Don't audit SF trying to read graphics firmware
 dontaudit surfaceflinger vendor_firmware_gpu_file:file r_file_perms;
 dontaudit surfaceflinger vendor_firmware_gpu_file:dir {getattr search};
+
+get_prop(surfaceflinger, vendor_default_prop)
