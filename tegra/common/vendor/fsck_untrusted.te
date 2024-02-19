@@ -1,0 +1,2 @@
+#r_dir_file(fsck_untrusted, cache_file)
+#r_dir_file(fsck_untrusted, proc_swaps)
