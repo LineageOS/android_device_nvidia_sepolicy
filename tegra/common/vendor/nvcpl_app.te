@@ -85,4 +85,6 @@ allow nvcpl_app system_app_data_file:dir create_dir_perms;
 
 allow nvcpl_app cgroup:file write;
 
+#allow nvcpl_app sysfs_nvi2c:file r_file_perms;
+
 get_prop(nvcpl_app, powerhal_prop)
