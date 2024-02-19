@@ -189,3 +189,7 @@ allow system_app { cache_file cache_recovery_file  }:file create_file_perms;
 # Allow to read diagtools plug-in on /data/mfgtest
 allow system_app diag_data_file:dir r_dir_perms;
 allow system_app diag_data_file:file r_file_perms;
+
+# ZRAM
+allow system_app system_app proc_vmallocinfo r_file_perms;
+allow system_app system_app sysfs_zram r_file_perms;
