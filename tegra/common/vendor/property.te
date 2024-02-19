@@ -70,3 +70,6 @@ vendor_internal_prop(vendor_wifi_prop);
 
 # For ro.vendor.bt.bdaddr_path
 vendor_internal_prop(vendor_bdaddr_prop);
+
+vendor_public_prop(deprecated_soc_prop);
+dontaudit domain deprecated_soc_prop:file *;
