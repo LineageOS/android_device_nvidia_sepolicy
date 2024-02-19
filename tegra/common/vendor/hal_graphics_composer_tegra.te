@@ -70,6 +70,8 @@ hal_client_domain(hal_graphics_composer_tegra, hal_ipprotect_superres)
 vndbinder_use(hal_graphics_composer_tegra)
 
 get_prop(hal_graphics_composer_tegra, hdcp_srm_prop)
+get_prop(hal_graphics_composer_tegra, graphics_config_prop)
+set_prop(hal_graphics_composer_tegra, graphics_config_writeable_prop)
 
 dontaudit hal_graphics_composer_tegra tmpfs:file { read write execute };
 
