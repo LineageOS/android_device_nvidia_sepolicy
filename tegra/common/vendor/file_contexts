@@ -24,6 +24,7 @@
 /dev/camera(/video[0-9]?[0-9])?		u:object_r:video_device:s0
 /dev/capture-isp-channel[0-9]?[0-9]		u:object_r:camera_device:s0
 /dev/capture-vi-channel[0-9]?[0-9]		u:object_r:camera_device:s0
+/dev/cec0		u:object_r:tegracec_device:s0
 /dev/constraint.*		u:object_r:pmqos_device:s0
 /dev/cpu_freq_max		u:object_r:pmqos_device:s0
 /dev/cpu_freq_min		u:object_r:pmqos_device:s0
@@ -125,6 +126,8 @@
 /sys/devices/70090000\.xusb/usb[1,2]/([0-9]-[0-9](\.[0-9])*/)*idVendor		u:object_r:sysfs_usb_idvendor:s0
 /sys/devices/7009f000.usb_cd/extcon/extcon[0-9]+/name		u:object_r:sysfs_extcon_name:s0
 /sys/devices/usb_cd/extcon/extcon[0-9]+/name		u:object_r:sysfs_extcon_name:s0
+/sys/devices/usb_cd/extcon/extcon[0-9]+/cable.[0-9]+/name         u:object_r:sysfs_extcon_name:s0
+/sys/devices/7000c000.i2c/i2c-0/0-0018/extcon/extcon1/name u:object_r:sysfs_extcon_name:s0
 /sys/devices/700e2000.soctherm/oc_stats		u:object_r:sysfs_thermal:s0
 /sys/devices/aon_shub(/.*)?		u:object_r:sysfs_iio:s0
 /sys/devices/bluedroid_pm/rfkill/rfkill[0-3]/state		u:object_r:sysfs_bluetooth_writable:s0
@@ -173,6 +176,8 @@
 /sys/devices/platform/tegra-xhci(/.*)?		u:object_r:sysfs_bus_usb:s0
 /sys/devices/platform(/.*)?		u:object_r:sysfs_device_platform:s0
 /sys/devices/psy_extcon_ac_adaptor/power_supply(/.*)?		u:object_r:sysfs_power_supply:s0
+/sys/devices/7000c000.i2c/i2c-0/0-0036/power_supply/battery/status u:object_r:sysfs_power_supply:s0
+/sys/devices/7000c000.i2c/i2c-0/0-0036/power_supply/battery/present u:object_r:sysfs_power_supply:s0
 /sys/devices/pwm-fan(/.*)?		u:object_r:sysfs_pwm_fan:s0
 /sys/devices/platform/pwm-fan[0-9]+(/.*)?	u:object_r:sysfs_pwm_fan:s0
 /sys/devices/pwm-leds/leds/led_lightbar/brightness		u:object_r:sysfs_lightbar:s0
