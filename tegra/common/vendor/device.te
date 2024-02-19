@@ -65,3 +65,5 @@ type im501_pcm_device, dev_type;
 
 # dtb/dtbo partitions
 type dtb_block_device, dev_type;
+type firmware_block_device, dev_type;
+type sda_block_device, dev_type;

@@ -27,6 +27,9 @@ type sysfs_gpu_freq_limit, fs_type, sysfs_type;
 # GPU TPC sysfs
 type sysfs_gpu_tpc, fs_type, sysfs_type;
 
+# Serial sysfs
+type sysfs_serial, fs_type, sysfs_type;
+
 # /sys/devices/platform/tegra_usb_modem_power/...
 # /sys/devices/platform/sysedp_modem/...
 type sysfs_radio, fs_type, sysfs_type;
@@ -366,3 +369,4 @@ type debugfs_bt, fs_type, debugfs_type;
 type debugfs_tegradc, fs_type, debugfs_type, mlstrustedobject;
 
 type proc_legacy_va_layout, fs_type, proc_type;
+type permission_vendor_data_file, file_type, data_file_type;
