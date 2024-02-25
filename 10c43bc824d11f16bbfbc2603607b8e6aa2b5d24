@@ -1,0 +1,326 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c712096_5329c3d3",
+        "filename": "tegra/common/vendor/device.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx",
+      "range": {
+        "startLine": 68,
+        "startChar": 0,
+        "endLine": 69,
+        "endChar": 32
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e59acfb_0edccdf5",
+        "filename": "tegra/common/vendor/file_contexts",
+        "patchSetId": 9
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "meh, I kinda want to leave this as tegracec- thoughts?",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 48
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d08a6963_18f4866c",
+        "filename": "tegra/common/vendor/file_contexts",
+        "patchSetId": 9
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "to simplify",
+      "range": {
+        "startLine": 120,
+        "startChar": 0,
+        "endLine": 126,
+        "endChar": 130
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b91dff3f_fde3c046",
+        "filename": "tegra/common/vendor/file_contexts",
+        "patchSetId": 9
+      },
+      "lineNbr": 275,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx",
+      "range": {
+        "startLine": 275,
+        "startChar": 0,
+        "endLine": 275,
+        "endChar": 72
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b01dade8_5fddeecd",
+        "filename": "tegra/common/vendor/file_contexts",
+        "patchSetId": 9
+      },
+      "lineNbr": 373,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx",
+      "range": {
+        "startLine": 372,
+        "startChar": 0,
+        "endLine": 373,
+        "endChar": 125
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc3a3df8_3a1a0c94",
+        "filename": "tegra/common/vendor/file_contexts",
+        "patchSetId": 9
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "to cleanup and move to nx",
+      "range": {
+        "startLine": 396,
+        "startChar": 0,
+        "endLine": 405,
+        "endChar": 132
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5ed4989_b01c6946",
+        "filename": "tegra/common/vendor/hal_health_default.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 44
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99c7982a_8aa9e14c",
+        "filename": "tegra/common/vendor/hal_sensors_default.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 56
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a51f1b30_9d53e57f",
+        "filename": "tegra/common/vendor/init.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 58
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b551e12_776c8c79",
+        "filename": "tegra/common/vendor/jc_setup_exec.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "whole file to nx",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 0
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8018da2_8016a4a8",
+        "filename": "tegra/common/vendor/joycond.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx - whole file",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 46
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b582ca6f_277b78e2",
+        "filename": "tegra/common/vendor/system_server.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx?",
+      "range": {
+        "startLine": 133,
+        "startChar": 0,
+        "endLine": 133,
+        "endChar": 39
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8885626_5848c46c",
+        "filename": "tegra/common/vendor/system_server.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx",
+      "range": {
+        "startLine": 147,
+        "startChar": 0,
+        "endLine": 147,
+        "endChar": 62
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0d98925a_94b84f71",
+        "filename": "tegra/common/vendor/vendor_init.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-25T00:01:54Z",
+      "side": 1,
+      "message": "move to nx",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 78
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
