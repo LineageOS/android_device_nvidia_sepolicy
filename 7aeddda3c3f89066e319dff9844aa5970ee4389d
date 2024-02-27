@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f457a82e_958fb6cc",
+        "filename": "tegra/common/vendor/file_contexts",
+        "patchSetId": 18
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-27T23:27:12Z",
+      "side": 1,
+      "message": "maybe some regex to simplify? I suck at that.",
+      "range": {
+        "startLine": 120,
+        "startChar": 0,
+        "endLine": 126,
+        "endChar": 130
+      },
+      "revId": "7aeddda3c3f89066e319dff9844aa5970ee4389d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
