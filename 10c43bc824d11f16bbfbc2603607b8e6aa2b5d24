@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c1141d2_398f8ab6",
+        "filename": "tegra/common/vendor/device.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-27T23:06:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0c712096_5329c3d3",
+      "range": {
+        "startLine": 68,
+        "startChar": 0,
+        "endLine": 69,
+        "endChar": 32
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9e59acfb_0edccdf5",
@@ -305,6 +329,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7fea48c8_c027e486",
+        "filename": "tegra/common/vendor/hal_sensors_default.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-27T23:06:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "99c7982a_8aa9e14c",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 56
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a51f1b30_9d53e57f",
@@ -318,6 +366,30 @@
       "writtenOn": "2024-02-25T00:01:54Z",
       "side": 1,
       "message": "move to nx",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 58
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f703c822_3edb0430",
+        "filename": "tegra/common/vendor/init.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-27T23:06:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a51f1b30_9d53e57f",
       "range": {
         "startLine": 72,
         "startChar": 0,
@@ -351,6 +423,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "29451e1a_fb38dc02",
+        "filename": "tegra/common/vendor/jc_setup_exec.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-27T23:06:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b551e12_776c8c79",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 0
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c8018da2_8016a4a8",
@@ -364,6 +460,30 @@
       "writtenOn": "2024-02-25T00:01:54Z",
       "side": 1,
       "message": "move to nx - whole file",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 46
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e58b190_43e3b312",
+        "filename": "tegra/common/vendor/joycond.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-27T23:06:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c8018da2_8016a4a8",
       "range": {
         "startLine": 1,
         "startChar": 0,
@@ -397,6 +517,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec9c4cc7_83f6003d",
+        "filename": "tegra/common/vendor/system_server.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-27T23:06:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b582ca6f_277b78e2",
+      "range": {
+        "startLine": 133,
+        "startChar": 0,
+        "endLine": 133,
+        "endChar": 39
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d8885626_5848c46c",
@@ -410,6 +554,30 @@
       "writtenOn": "2024-02-25T00:01:54Z",
       "side": 1,
       "message": "move to nx",
+      "range": {
+        "startLine": 147,
+        "startChar": 0,
+        "endLine": 147,
+        "endChar": 62
+      },
+      "revId": "10c43bc824d11f16bbfbc2603607b8e6aa2b5d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6326825_da697e06",
+        "filename": "tegra/common/vendor/system_server.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-27T23:06:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d8885626_5848c46c",
       "range": {
         "startLine": 147,
         "startChar": 0,
