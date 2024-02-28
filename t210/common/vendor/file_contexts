@@ -88,3 +88,4 @@
 # Power Supply
 /sys/devices/7000c400.i2c/i2c-1/1-001e/7000c400.i2c:ec@1e:i2c-tunnel/i2c-7/7-0055/power_supply/bq27742-0(/.*)?	u:object_r:sysfs_power_supply:s0
 /sys/devices/7000c400.i2c/i2c-1/1-001e/cros-ec-ctl.0.auto/cros-usbpd-charger.1.auto/power_supply/CROS_USBPD_CHARGER0(/.*)?	u:object_r:sysfs_power_supply:s0
+/sys/devices/7000c000.i2c/i2c-0/0-0036/power_supply(/.*)?	u:object_r:sysfs_power_supply:s0
