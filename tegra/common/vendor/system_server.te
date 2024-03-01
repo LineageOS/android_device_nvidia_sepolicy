@@ -141,3 +141,6 @@ allow system_server sysfs_class_extcon:dir r_dir_perms;
 
 get_prop(system_server, userspace_reboot_exported_prop);
 get_prop(system_server, userspace_reboot_config_prop);
+
+# Silence annoying tmpfs denial
+dontaudit system_server system_server_tmpfs:file execute;
