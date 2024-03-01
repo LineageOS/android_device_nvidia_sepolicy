@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "163f03cf_1ef0e672",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-03-01T18:10:03Z",
+      "side": 1,
+      "message": "Don\u0027t like this being vendor/device specific, but until platform accepts it elsewhere... meh.",
+      "revId": "039ac26c187e76e6eeced39d8eed934056c21a46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
