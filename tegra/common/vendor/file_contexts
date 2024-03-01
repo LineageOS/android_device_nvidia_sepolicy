@@ -24,6 +24,7 @@
 /dev/camera(/video[0-9]?[0-9])?		u:object_r:video_device:s0
 /dev/capture-isp-channel[0-9]?[0-9]		u:object_r:camera_device:s0
 /dev/capture-vi-channel[0-9]?[0-9]		u:object_r:camera_device:s0
+/dev/cec0			u:object_r:tegracec_device:s0
 /dev/constraint.*		u:object_r:pmqos_device:s0
 /dev/cpu_freq_max		u:object_r:pmqos_device:s0
 /dev/cpu_freq_min		u:object_r:pmqos_device:s0
