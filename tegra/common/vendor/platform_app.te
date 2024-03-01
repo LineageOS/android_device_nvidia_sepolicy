@@ -67,3 +67,6 @@ allow platform_app { cache_file cache_recovery_file  }:file create_file_perms;
 # Likely not needed
 auditallow platform_app cache_recovery_file:dir create_dir_perms;
 auditallow platform_app cache_recovery_file:file create_file_perms;
+
+# GPU firmware
+allow platform_app vendor_firmware_gpu_file:dir search;
