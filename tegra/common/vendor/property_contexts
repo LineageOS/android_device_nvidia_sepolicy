@@ -397,3 +397,6 @@ persist.NV_OPENCL_PIN_THRESHOLD						u:object_r:exported_default_prop:s0
 # AOSP CEC HAL
 ro.hdmi.vendor_id	u:object_r:hdmi_config_prop:s0
 ro.hdmi.cec_version	u:object_r:hdmi_config_prop:s0
+
+# Graphics HAL
+ro.hardware.chipname	u:object_r:deprecated_soc_prop:s0 exact string
