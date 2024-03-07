@@ -22,3 +22,5 @@ allow kernel vendor_firmware_wifi_file:file r_file_perms;
 #Allow access to file /mnt/factory/wifi/wifi_mac.txt
 r_dir_file(hal_wifi_default, factory_file)
 r_dir_file(hal_wifi_default, mnt_vendor_file)
+
+get_prop(hal_wifi_default, vendor_wifi_version)
