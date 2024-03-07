@@ -164,6 +164,8 @@ ro.vendor.comms.bt.lpm                u:object_r:vendor_bt_prop:s0
 ro.vendor.wifi.fw_path_param          u:object_r:vendor_wifi_prop:s0
 ro.vendor.wifi.op_mode_param          u:object_r:vendor_wifi_prop:s0
 
+vendor.wlan.firmware.version          u:object_r:vendor_wifi_version:s0
+
 # For Netflix properties
 ro.vendor.nrdp.                     u:object_r:nrdp_prop:s0
 

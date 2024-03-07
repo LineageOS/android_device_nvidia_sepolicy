@@ -67,6 +67,7 @@ vendor_internal_prop(vendor_debug_prop);
 vendor_internal_prop(vendor_tee_prop);
 vendor_internal_prop(vendor_vold_prop);
 vendor_internal_prop(vendor_wifi_prop);
+vendor_internal_prop(vendor_wifi_version);
 
 # For ro.vendor.bt.bdaddr_path
 vendor_internal_prop(vendor_bdaddr_prop);
