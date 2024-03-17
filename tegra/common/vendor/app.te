@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-allow_use_phs({appdomain -isolated_app -untrusted_app_all})
+allow_use_phs({appdomain -isolated_app_all -untrusted_app_all})
 
-allow { appdomain -ephemeral_app -isolated_app } sysfs_gpu_ptimer:file r_file_perms;
+allow { appdomain -ephemeral_app -isolated_app_all } sysfs_gpu_ptimer:file r_file_perms;
 allow appdomain sysfs_mmc_host:dir search;
 
 # Access to radio_data_file
 allow appdomain radio_data_file:dir getattr;
 
-binder_call( { appdomain -isolated_app }, hal_cpl_service_common_server)
-allow { appdomain -isolated_app } hal_cpl_service_common_hwservice:hwservice_manager find;
+binder_call( { appdomain -isolated_app_all }, hal_cpl_service_common_server)
+allow { appdomain -isolated_app_all } hal_cpl_service_common_hwservice:hwservice_manager find;

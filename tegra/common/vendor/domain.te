@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-r_dir_file(domain -isolated_app, sysfs_bus_usb)
-r_dir_file(domain -isolated_app, sysfs_tegra_info)
-r_dir_file(domain -isolated_app, sysfs_tegrafuse_aid)
+r_dir_file(domain -isolated_app_all, sysfs_bus_usb)
+r_dir_file(domain -isolated_app_all, sysfs_tegra_info)
+r_dir_file(domain -isolated_app_all, sysfs_tegrafuse_aid)
 
 # Allow all domains to read surfacefinger property
 get_prop(domain, hwc_prop)
@@ -38,7 +38,7 @@ get_prop(domain -coredomain, mediavndsvc_prop)
 
 allow domain gpu_device:dir r_dir_perms;
 
-allow { domain -coredomain -ephemeral_app -isolated_app -mediaprovider -untrusted_app -untrusted_app_25 -untrusted_app_27 -untrusted_app_all } proc_version:file r_file_perms;
+allow { domain -coredomain -ephemeral_app -isolated_app_all -mediaprovider -untrusted_app -untrusted_app_25 -untrusted_app_27 -untrusted_app_all } proc_version:file r_file_perms;
 
 allow domain sysfs_type:dir search;
 allow domain sysfs_type:lnk_file { getattr read };
