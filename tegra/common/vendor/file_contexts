@@ -113,6 +113,7 @@
 /sys/devices/50000000.host1x/tegradc\.[0-1]/hdmi_link_supervisor		u:object_r:sysfs_hdmi_link_supervisor:s0
 /sys/devices/50000000\.host1x/tegradc\.0/graphics/fb0/blank		u:object_r:sysfs_hdmi:s0
 /sys/devices/50000000\.host1x/tegradc\.0/graphics/fb0/name		u:object_r:sysfs_hdmi:s0
+/sys/devices/50000000\.host1x/tegradc.\0/panel_rotation	u:object_r:sysfs_disp_dev:s0
 /sys/devices/57000000\.gpu/devfreq/57000000\.gpu(/.*)?		u:object_r:sysfs_devfreq:s0
 /sys/devices/7000c[0457]00.i2c(/.*)?		u:object_r:sysfs_nvi2c:s0
 /sys/devices/7000d000.i2c/i2c-4/4-003c/max77620-pmic/regulator/regulator\.[0-9]+/name		u:object_r:sysfs_regulator_name:s0
@@ -125,6 +126,7 @@
 /sys/devices/70090000\.xusb/usb[1,2]/([0-9]-[0-9](\.[0-9])*/)*idProduct		u:object_r:sysfs_usb_idproduct:s0
 /sys/devices/70090000\.xusb/usb[1,2]/([0-9]-[0-9](\.[0-9])*/)*idVendor		u:object_r:sysfs_usb_idvendor:s0
 /sys/devices/7009f000.usb_cd/extcon/extcon[0-9]+/name		u:object_r:sysfs_extcon_name:s0
+/sys/devices/7009f000.usb_cd/extcon/extcon[0-9]+/cable.[0-9]/name	u:object_r:sysfs_extcon_name:s0
 /sys/devices/usb_cd/extcon/extcon[0-9]+/name		u:object_r:sysfs_extcon_name:s0
 /sys/devices/700e2000.soctherm/oc_stats		u:object_r:sysfs_thermal:s0
 /sys/devices/aon_shub(/.*)?		u:object_r:sysfs_iio:s0
