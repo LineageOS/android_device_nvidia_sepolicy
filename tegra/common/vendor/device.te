@@ -18,9 +18,6 @@ type quadd_device, dev_type;
 # /dev/quadd_auth
 type quadd_auth_device, dev_type;
 
-# /dev/hidraw[0-9]
-type hidraw_device, dev_type, mlstrustedobject;
-
 # Tsec device
 type tsec_device, dev_type, mlstrustedobject;
 

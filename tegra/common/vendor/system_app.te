@@ -58,7 +58,6 @@ allow system_app sysfs_ozmo:dir r_dir_perms;
 allow system_app sysfs_ozmo:file rw_file_perms;
 allow system_app sysfs_hid:dir r_dir_perms;
 allow system_app sysfs_hid:file rw_file_perms;
-allow system_app hidraw_device:chr_file rw_file_perms;
 allow system_app ozmo_device:chr_file rw_file_perms;
 allow system_app sysfs_blake:file rw_file_perms;
 allow system_app oem_media_file:dir r_dir_perms;
