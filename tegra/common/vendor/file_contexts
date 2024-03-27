@@ -15,6 +15,7 @@
 /data/vendor/nvpmodel(/.*)?		u:object_r:nvpmodel_data:s0
 /data/vendor/provTest(/.*)?		u:object_r:dx_data_file:s0
 /data/vendor/shield_ota(/.*)?		u:object_r:shield_ota_file:s0
+/data/vendor/eks2(/.*)?		u:object_r:tee_data_file:s0
 /data/vendor/ss(/.*)?		u:object_r:tee_data_file:s0
 /data/vendor/tlk(/.*)?		u:object_r:tee_data_file:s0
 /data/vendor/wifi(/.*)?		u:object_r:wifi_vendor_data_file:s0
