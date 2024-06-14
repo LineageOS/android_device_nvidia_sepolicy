@@ -15,5 +15,9 @@
 # Allow update_engine to read/write misc partition
 allow update_engine  misc_block_device:blk_file rw_file_perms;
 
+allow update_engine  recovery_block_device:blk_file rw_file_perms;
+
 # Allow update_engine to call TegraOTA service
 binder_call(update_engine, platform_app);
+
+allow update_engine proc_filesystems:file { getattr open read };
