@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c11a5b1_f9b56408",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-06-18T22:48:42Z",
+      "side": 1,
+      "message": "Verified booting foster on jetson_cv using aidl light hal, which was boot looping previously when enforcing.",
+      "revId": "2d948b6bd8843915cf21fe7a13130e6e44d8feec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
