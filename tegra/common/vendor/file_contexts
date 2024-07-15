@@ -386,3 +386,4 @@
 
 # Scripts
 /(vendor|system/vendor)/bin/bt_loader\.sh                                        u:object_r:bt_loader_exec:s0
+/(vendor|system/vendor)/bin/symlink_data\.sh                                     u:object_r:symlink_data_exec:s0
