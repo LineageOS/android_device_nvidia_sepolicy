@@ -1,0 +1,30 @@
+# Copyright (C) 2024 The LineageOS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+type symlink_data, domain;
+type symlink_data_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(symlink_data)
+
+allow symlink_data vendor_toolbox_exec:file rx_file_perms;
+
+allow symlink_data block_device:dir search;
+allow symlink_data userdata_block_device:blk_file r_file_perms;
+allow symlink_data block_device:dir rw_dir_perms;
+allow symlink_data block_device:lnk_file create_file_perms;
+
+recovery_only(`
+  allow symlink_data rootfs:dir r_dir_perms;
+  allow symlink_data rootfs:file { entrypoint rx_file_perms };
+')
