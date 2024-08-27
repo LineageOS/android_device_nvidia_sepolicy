@@ -88,3 +88,6 @@
 
 # display device
 /sys/devices/13e10000.host1x/15200000.nvdisplay/panel_rotation	u:object_r:sysfs_disp_dev:s0
+
+# usb bus
+/sys/devices/[0-9a-f]+\.xhci(/.*)?	u:object_r:sysfs_bus_usb:s0
