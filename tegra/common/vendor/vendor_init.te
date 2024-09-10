@@ -22,3 +22,5 @@ set_prop(vendor_init, factoryhal_prop)
 set_prop(vendor_init, udc_prop)
 set_prop(vendor_init, usb_mode_prop)
 set_prop(vendor_init, vendor_usb_prop)
+
+allow vendor_init debugfs_tegradc:file rw_file_perms;
