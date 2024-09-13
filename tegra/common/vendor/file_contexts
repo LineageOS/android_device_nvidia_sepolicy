@@ -384,3 +384,7 @@
 
 # Scripts
 /(vendor|system/vendor)/bin/bt_loader\.sh                                        u:object_r:bt_loader_exec:s0
+
+# Update engine
+/(system|product)/bin/nv_bootloader_payload_updater      u:object_r:postinstall_exec:s0
+/(system|product)/bin/nv_bootloader_payload_updater-efi  u:object_r:postinstall_exec:s0
