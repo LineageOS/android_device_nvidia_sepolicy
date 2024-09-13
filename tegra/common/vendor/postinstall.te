@@ -18,6 +18,10 @@ allow postinstall sysfs_mmc_host:file rw_file_perms;
 
 # Allow postinstall to write emmc boot partitions
 allow postinstall bootloader_block_device:blk_file rw_file_perms;
+allowxperm postinstall bootloader_block_device:blk_file ioctl { BLKPBSZGET };
+
+# Allow postinstall to write dtb partitions
+allow postinstall dtb_block_device:blk_file rw_file_perms;
 
 # Read OTA zip file at /data/ota_package/.
 allow postinstall ota_package_file:dir r_dir_perms;
