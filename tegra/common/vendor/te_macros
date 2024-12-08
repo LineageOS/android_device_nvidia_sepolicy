@@ -15,10 +15,12 @@
 # allow_use_phs(clientdomain)
 # Allow clientdomain to connect to PHS.
 define(`allow_use_phs', `
+    not_recovery(`
     not_full_treble(`
             unix_socket_connect($1, nvphsd, nvphsd)
             unix_socket_send($1, nvphsd, nvphsd)
             allow $1 nvphsd_socket:dir r_dir_perms;
+    ')
     ')
     binder_call(nvphsd, $1)
     binder_call($1, nvphsd)
