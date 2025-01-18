@@ -143,9 +143,6 @@ r_dir_file(system_app, sysfs_net)
 # Allow Settings to recover after resolution changes
 dontaudit system_app self:capability2 { block_suspend };
 
-# Allow system apps to communicate with ShieldTech HAL
-allow system_app hal_shieldtech_hwservice:hwservice_manager find;
-
 # ShieldTech
 allow system_app hal_shieldtech_default:binder call;
 

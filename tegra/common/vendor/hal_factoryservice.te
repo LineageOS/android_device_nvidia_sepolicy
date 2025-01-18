@@ -22,5 +22,4 @@ init_daemon_domain(hal_factoryservice_default)
 binder_call(hal_factoryservice_client, hal_factoryservice_server)
 binder_call(hal_factoryservice_server, hal_factoryservice_client)
 
-add_hwservice(hal_factoryservice_server, hal_factoryservice_hwservice)
-allow hal_factoryservice_client hal_factoryservice_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_factoryservice, hal_factoryservice_hwservice)

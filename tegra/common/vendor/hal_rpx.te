@@ -22,5 +22,4 @@ init_daemon_domain(hal_rpx_default)
 binder_call(hal_rpx_client, hal_rpx_server)
 binder_call(hal_rpx_server, hal_rpx_client)
 
-add_hwservice(hal_rpx_server, hal_rpx_hwservice)
-allow hal_rpx_client hal_rpx_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_rpx, hal_rpx_hwservice)

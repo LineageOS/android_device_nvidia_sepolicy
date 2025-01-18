@@ -22,5 +22,4 @@ init_daemon_domain(hal_thermalservice_default)
 binder_call(hal_thermalservice_client, hal_thermalservice_server)
 binder_call(hal_thermalservice_server, hal_thermalservice_client)
 
-add_hwservice(hal_thermalservice_server, hal_thermalservice_hwservice)
-allow hal_thermalservice_client hal_thermalservice_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_thermalservice, hal_thermalservice_hwservice)

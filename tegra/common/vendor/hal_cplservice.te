@@ -22,8 +22,7 @@ init_daemon_domain(hal_cplservice_default)
 binder_call(hal_cplservice_client, hal_cplservice_server)
 binder_call(hal_cplservice_server, hal_cplservice_client)
 
-add_hwservice(hal_cplservice_server, hal_cplservice_hwservice)
-allow hal_cplservice_client hal_cplservice_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_cplservice, hal_cplservice_hwservice)
 
 set_prop(hal_cplservice_default, power_hint_prop);
 set_prop(hal_cplservice_default, tegra_graphics_prop)

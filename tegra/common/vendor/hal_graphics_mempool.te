@@ -16,5 +16,4 @@
 binder_call(hal_graphics_mempool_client, hal_graphics_mempool_server)
 binder_call(hal_graphics_mempool_server, hal_graphics_mempool_client)
 
-add_hwservice(hal_graphics_mempool_server, hal_graphics_mempool_hwservice)
-allow hal_graphics_mempool_client hal_graphics_mempool_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_graphics_mempool, hal_graphics_mempool_hwservice)

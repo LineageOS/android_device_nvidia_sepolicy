@@ -16,5 +16,4 @@
 binder_call(hal_flynn_client, hal_flynn_server)
 binder_call(hal_flynn_server, hal_flynn_client)
 
-add_hwservice(hal_flynn_server, hal_flynn_hwservice)
-allow hal_flynn_client hal_flynn_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_flynn, hal_flynn_hwservice)

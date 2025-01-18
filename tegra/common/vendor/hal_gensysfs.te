@@ -16,6 +16,5 @@
 # HwBinder IPC from client to server
 binder_call(hal_gensysfs_client, hal_gensysfs_server)
 
-add_hwservice(hal_gensysfs_server, hal_gensysfs_hwservice)
-allow hal_gensysfs_client hal_gensysfs_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_gensysfs, hal_gensysfs_hwservice)
 

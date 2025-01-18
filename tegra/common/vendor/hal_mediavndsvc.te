@@ -22,5 +22,4 @@ init_daemon_domain(hal_mediavndsvc_default)
 binder_call(hal_mediavndsvc_client, hal_mediavndsvc_server)
 binder_call(hal_mediavndsvc_server, hal_mediavndsvc_client)
 
-add_hwservice(hal_mediavndsvc_server, hal_mediavndsvc_hwservice)
-allow hal_mediavndsvc_client hal_mediavndsvc_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_mediavndsvc, hal_mediavndsvc_hwservice)

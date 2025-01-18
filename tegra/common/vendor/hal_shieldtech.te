@@ -16,5 +16,4 @@
 binder_call(hal_shieldtech_client, hal_shieldtech_server)
 binder_call(hal_shieldtech_server, hal_shieldtech_client)
 
-add_hwservice(hal_shieldtech_server, hal_shieldtech_hwservice)
-allow hal_shieldtech_client hal_shieldtech_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_shieldtech, hal_shieldtech_hwservice)

@@ -22,5 +22,4 @@ init_daemon_domain(hal_mossigner_default)
 binder_call(hal_mossigner_client, hal_mossigner_server)
 binder_call(hal_mossigner_server, hal_mossigner_client)
 
-add_hwservice(hal_mossigner_server, hal_mossigner_hwservice)
-allow hal_mossigner_client hal_mossigner_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_mossigner, hal_mossigner_hwservice)
