@@ -73,5 +73,4 @@ vendor_internal_prop(vendor_wifi_version);
 vendor_internal_prop(vendor_bdaddr_prop);
 
 # For ro.hardware.chipname
-vendor_public_prop(deprecated_soc_prop);
-dontaudit domain deprecated_soc_prop:file *;
+dontaudit hal_graphics_composer_tegra default_prop:file *;
