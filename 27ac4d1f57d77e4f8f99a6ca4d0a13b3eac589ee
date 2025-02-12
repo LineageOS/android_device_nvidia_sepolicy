@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6fdacb2_c1543b47",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-02-12T21:19:53Z",
+      "side": 1,
+      "message": "Verified on lanai. Insert expletives about postinstall policy handling.",
+      "revId": "27ac4d1f57d77e4f8f99a6ca4d0a13b3eac589ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
