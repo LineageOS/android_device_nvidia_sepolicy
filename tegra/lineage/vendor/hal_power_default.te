@@ -1,0 +1,2 @@
+allow hal_power_default sysfs_devfreq:file rw_file_perms;
+allow hal_power_default sysfs_pwm_fan:file rw_file_perms;
