@@ -1,1 +1,4 @@
 hal_client_domain(gmscore_app, hal_cpl_service_common)
+
+# WLAN MAC
+allow gmscore_app sysfs_pci_device:file r_file_perms;
