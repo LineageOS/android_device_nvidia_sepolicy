@@ -1,0 +1,4 @@
+allow kernel sepolicy_file:file getattr;
+
+allow kernel system_bootstrap_lib_file:dir getattr;
+allow kernel system_bootstrap_lib_file:file getattr;
