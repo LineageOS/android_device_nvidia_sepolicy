@@ -189,3 +189,5 @@ allow system_app diag_data_file:file r_file_perms;
 # ZRAM
 allow system_app proc_vmallocinfo:file r_file_perms;
 allow system_app sysfs_zram:file r_file_perms;
+
+dontaudit system_app bootanim:fd use;

@@ -70,3 +70,5 @@ auditallow platform_app cache_recovery_file:file create_file_perms;
 
 # GPU firmware
 allow platform_app vendor_firmware_gpu_file:dir search;
+
+dontaudit platform_app bootanim:fd use;
