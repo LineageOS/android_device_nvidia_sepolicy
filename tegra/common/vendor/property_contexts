@@ -134,9 +134,6 @@ vendor.powerhal.reclaim_compact_mem    u:object_r:powerhal_prop:s0
 # NV Power mode
 persist.vendor.sys.NV_POWER_MODE           u:object_r:powerhal_prop:s0
 
-# console logs developer option
-vendor.debug.enable_console_logs	u:object_r:system_prop:s0
-
 # camera property
 vendor.2g_ram_enabled               u:object_r:system_prop:s0
 
