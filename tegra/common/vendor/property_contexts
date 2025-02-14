@@ -50,7 +50,7 @@ vendor.phs.therm.fan_trip               u:object_r:thermal_prop:s0
 
 vendor.pbc.                             u:object_r:pbc_prop:s0
 vendor.sys.pbc.phs.currentpower         u:object_r:pbc_prop:s0
-persist.vendor.sys.pbc.     			u:object_r:pbc_prop:s0
+persist.vendor.sys.pbc.			u:object_r:pbc_prop:s0
 
 # udc properties
 vendor.sys.usb.udc			u:object_r:udc_prop:s0
