@@ -133,6 +133,9 @@ type sysfs_cmu, fs_type, sysfs_type;
 # /sys/devices/platform/pwm-fan.*
 type sysfs_pwm_fan, fs_type, sysfs_type;
 
+# /sys/devices/39c0000.tachometer/...
+type sysfs_tachometer, fs_type, sysfs_type;
+
 # /sys/module/input_cfboost/parameters/...
 type sysfs_cfboost, fs_type, sysfs_type;
 
