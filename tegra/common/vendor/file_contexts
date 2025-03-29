@@ -309,6 +309,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.graphics\.composer@2\.0-service		u:object_r:hal_graphics_composer_tegra_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.mossigner@1\.0-service		u:object_r:hal_mossigner_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.power@1\.0-service		u:object_r:hal_power_tegra_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-nvidia			u:object_r:hal_power_tegra_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.shieldtech\.inputflinger@1\.0-service		u:object_r:hal_shieldtech_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.statscollectionproxy@1\.0-service		u:object_r:hal_statscollectionproxy_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.nvidia\.hardware\.thermal@1\.0-service		u:object_r:hal_thermal_tegra_exec:s0
