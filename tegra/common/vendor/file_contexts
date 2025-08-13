@@ -324,6 +324,7 @@
 /(vendor|system/vendor)/lib(64)?/libndkbinderutil.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libnvblit.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libnvcolorutil.so		u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/libnvcontrol_jni.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libnvcpl.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libnvcpl_vendor.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libnvdc.so		u:object_r:same_process_hal_file:s0
