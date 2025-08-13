@@ -18,6 +18,7 @@ r_dir_file(platform_app, sysfs_thermal)
 
 hal_client_domain(platform_app, hal_rpx)
 hal_client_domain(platform_app, hal_cplservice)
+hal_client_domain(platform_app, hal_cpl_service_common)
 hal_client_domain(platform_app, hal_factoryservice)
 hal_client_domain(platform_app, hal_mossigner)
 hal_client_domain(platform_app, hal_statscollectionproxy)
