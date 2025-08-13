@@ -34,6 +34,7 @@ allow platform_app anr_data_file:file write;
 
 allow platform_app batteryproperties_service:service_manager find;
 
+allow platform_app hal_cpl_service_common_hwservice:hwservice_manager find;
 allow platform_app nvphsd_hwservice:hwservice_manager find;
 
 # Write to properties
