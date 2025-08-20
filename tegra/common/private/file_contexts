@@ -1,0 +1,1 @@
+/data/nfc(/.*)?		u:object_r:nfc_data_file:s0
