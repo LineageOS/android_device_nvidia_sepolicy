@@ -65,3 +65,5 @@ allow hal_camera_tegra hal_graphics_mapper_hwservice:hwservice_manager find;
 
 # allow camera hal to use fd of hal_graphics_composer_tegra
 allow hal_camera_tegra hal_graphics_composer_tegra:fd use;
+
+get_prop(hal_camera_tegra, vendor_camera_prop)
