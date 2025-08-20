@@ -358,6 +358,7 @@ type sysfs_reset_status, fs_type, sysfs_type;
 type sysfs_thermal_fan, fs_type, sysfs_type;
 type sysfs_usb_idproduct, fs_type, sysfs_type;
 type sysfs_usb_idvendor, fs_type, sysfs_type;
+type sysfs_usb_country_code, fs_type, sysfs_type;
 type sysfs_hdmi_link_supervisor, fs_type, sysfs_type;
 
 type dolby_data_file, file_type, data_file_type;
