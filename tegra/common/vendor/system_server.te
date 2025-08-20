@@ -139,6 +139,8 @@ allow system_server sysfs_extcon_name:file r_file_perms;
 allow system_server sysfs_audio_aux:file r_file_perms;
 allow system_server sysfs_class_extcon:dir r_dir_perms;
 
+r_dir_file(system_server, sysfs_usb_country_code)
+
 get_prop(system_server, userspace_reboot_exported_prop);
 get_prop(system_server, userspace_reboot_config_prop);
 
