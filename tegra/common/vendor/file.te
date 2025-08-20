@@ -369,3 +369,4 @@ type debugfs_bt, fs_type, debugfs_type;
 type debugfs_tegradc, fs_type, debugfs_type, mlstrustedobject;
 
 type proc_legacy_va_layout, fs_type, proc_type;
+type vendor_nfc_vendor_data_file, file_type, data_file_type;
