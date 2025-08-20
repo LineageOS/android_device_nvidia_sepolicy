@@ -1,0 +1,11 @@
+type hazeldos, domain;
+type hazeldos_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hazeldos)
+
+allow hazeldos vendor_shell_exec:file rx_file_perms;
+not_full_treble(`allow hazeldos shell_exec:file rx_file_perms;')
+allow hazeldos vendor_toolbox_exec:file rx_file_perms;
+not_full_treble(`allow hazeldos toolbox_exec:file rx_file_perms;')
+
+rw_dir_file(hazeldos, sysfs_gpio)
