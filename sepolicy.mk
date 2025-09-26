@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+ifneq ($(filter 3.10 4.9 5.10, $(TARGET_KERNEL_VERSION)),)
 # Common tegra policy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/common/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/common/public
@@ -31,4 +32,4 @@ endif
 ifneq ($(LINEAGE_BUILD),)
 BOARD_VENDOR_SEPOLICY_DIRS += $(LINEAGE_VENDOR_SEPOLICY_DIRS)
 endif
-
+endif
