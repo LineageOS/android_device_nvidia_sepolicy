@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,21 +14,4 @@
 # limitations under the License.
 #
 
-# Common tegra policy
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/common/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/common/public
-BOARD_VENDOR_SEPOLICY_DIRS   += device/nvidia/sepolicy/tegra/common/vendor
-LINEAGE_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/lineage/vendor
-
-ifeq ($(TARGET_TEGRA_VERSION), t210)
-BOARD_VENDOR_SEPOLICY_DIRS   += device/nvidia/sepolicy/t210/common/vendor
-LINEAGE_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/t210/lineage/vendor
-else ifneq ($(filter $(TARGET_TEGRA_VERSION), t186 t194 t234),)
-BOARD_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/common/vendor
-LINEAGE_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/t186/lineage/vendor
-endif
-
-ifneq ($(LINEAGE_BUILD),)
-BOARD_VENDOR_SEPOLICY_DIRS += $(LINEAGE_VENDOR_SEPOLICY_DIRS)
-endif
-
+# Nothing here yet

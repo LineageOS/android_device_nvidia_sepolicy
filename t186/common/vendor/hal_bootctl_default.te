@@ -1,2 +1,0 @@
-allow hal_bootctl_default sysfs_efivar:dir r_dir_perms;
-allow hal_bootctl_default sysfs_efivar:file create_file_perms;

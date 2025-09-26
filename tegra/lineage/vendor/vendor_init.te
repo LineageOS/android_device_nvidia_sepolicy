@@ -1,6 +1,0 @@
-# Insmod
-allow vendor_init self:capability sys_module;
-allow vendor_init vendor_file:system module_load;
-
-get_prop(vendor_init, vendor_usb_prop)
-set_prop(vendor_init, vendor_model_prop)

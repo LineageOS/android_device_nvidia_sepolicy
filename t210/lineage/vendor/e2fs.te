@@ -1,2 +1,0 @@
-# fstab formatable flag
-allow e2fs rpx_block_device:blk_file rw_file_perms;
