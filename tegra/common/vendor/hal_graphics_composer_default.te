@@ -1,0 +1,61 @@
+hal_server_domain(hal_graphics_composer_default, hal_graphics_composer)
+
+init_daemon_domain(hal_graphics_composer_default)
+
+allow_use_phs(hal_graphics_composer_default)
+
+# Allow hal_graphics_composer_default to access tsec
+allow hal_graphics_composer_default tsec_device:chr_file rw_file_perms;
+
+# Allow hal_graphics_composer_default to access tee
+allow hal_graphics_composer_default tee_device:chr_file rw_file_perms;
+
+# Allow hal_graphics_composer_default to access pmqos
+allow hal_graphics_composer_default pmqos_device:chr_file rw_file_perms;
+
+allow hal_graphics_composer_default self:process execmem;
+
+# allow composer hal to access dc device
+allow hal_graphics_composer_default tegradc_device:chr_file { rw_file_perms };
+
+r_dir_file(hal_graphics_composer_default, proc_meminfo)
+
+set_prop(hal_graphics_composer_default, hwc_prop)
+get_prop(hal_graphics_composer_default, hwservicemanager_prop)
+set_prop(hal_graphics_composer_default, surfaceflinger_prop)
+
+# Allow HWC to write the EDID DB
+allow hal_graphics_composer_default hwc_data_file:file {create_file_perms};
+allow hal_graphics_composer_default hwc_data_file:dir {create_dir_perms};
+
+# allow /dev to allow adf to search for /dev/adf*
+allow hal_graphics_composer_default device:dir r_dir_perms;
+
+set_prop(hal_graphics_composer_default, surfaceflinger_prop)
+
+# for accessing nvhdcp1 device
+allow hal_graphics_composer_default video_device:chr_file { rw_file_perms };
+
+allow hal_graphics_composer_default sysfs_disp_dev:file rw_file_perms;
+allow hal_graphics_composer_default sysfs_slowscan:file rw_file_perms;
+allow hal_graphics_composer_default sysfs_thermal:file rw_file_perms;
+allow hal_graphics_composer_default sysfs_smartdimmer:file rw_file_perms;
+
+# allow HWC to access mediacodec
+allow hal_graphics_composer_default mediacodec:fd use;
+
+# Graphics Display HAL
+hal_server_domain(hal_graphics_composer_default, hal_graphics_display)
+
+hal_client_domain(hal_graphics_composer_default, hal_cplservice)
+hal_client_domain(hal_graphics_composer_default, hal_cpl_service_common)
+hal_client_domain(hal_graphics_composer_default, hal_graphics_mempool)
+hal_server_domain(hal_graphics_composer_default, hal_graphics_mempool)
+hal_client_domain(hal_graphics_composer_default, hal_ipprotect_dolby)
+hal_client_domain(hal_graphics_composer_default, hal_ipprotect_superres)
+
+vndbinder_use(hal_graphics_composer_default)
+
+get_prop(hal_graphics_composer_default, hdcp_srm_prop)
+
+dontaudit hal_graphics_composer_default tmpfs:file { read write execute };

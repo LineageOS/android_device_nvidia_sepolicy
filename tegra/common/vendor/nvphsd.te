@@ -105,3 +105,5 @@ allow nvphsd sysfs_device_platform:dir r_dir_perms;
 allow nvphsd sysfs_device_platform:lnk_file r_file_perms;
 
 allow nvphsd cgroup:file rw_file_perms;
+
+r_dir_file(nvphsd, sysfs_device_platform)

@@ -48,6 +48,8 @@ r_dir_file(wifi_loader, factory_file)
 r_dir_file(wifi_loader, sysfs_mmc_host)
 r_dir_file(wifi_loader, sysfs_pci_device)
 
+r_dir_file(wifi_loader, sysfs_wlan_fwpath)
+
 allow wifi_loader tmpfs:dir r_dir_perms;
 
 allow wifi_loader system_file:system module_load;

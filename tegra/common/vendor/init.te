@@ -64,3 +64,5 @@ allow init metadata_block_device:lnk_file relabelto;
 allow init proc_legacy_va_layout:file rw_file_perms;
 
 allow init mnt_vendor_file:dir mounton;
+
+r_dir_file(init, sysfs_device_platform)

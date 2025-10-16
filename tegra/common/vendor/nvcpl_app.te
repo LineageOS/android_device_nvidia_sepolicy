@@ -72,6 +72,9 @@ allow nvcpl_app sysfs_vrr:file rw_file_perms;
 allow nvcpl_app sysfs_class_extcon:dir r_dir_perms;
 allow nvcpl_app sysfs_extcon_name:file r_file_perms;
 r_dir_file(nvcpl_app, sysfs_audio_aux)
+r_dir_file(nvcpl_app, sysfs_gpu_fmax)
+r_dir_file(nvcpl_app, sysfs_device_platform)
+r_dir_file(nvcpl_app, sysfs_nvi2c)
 allow nvcpl_app sysfs_device_platform:dir r_dir_perms;
 allow nvcpl_app sysfs_device_platform:lnk_file rw_file_perms;
 allow nvcpl_app sysfs_class_regulator:dir r_dir_perms;
