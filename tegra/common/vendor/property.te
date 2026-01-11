@@ -74,3 +74,6 @@ vendor_internal_prop(vendor_bdaddr_prop);
 
 # For ro.hardware.chipname
 dontaudit hal_graphics_composer_tegra default_prop:file *;
+
+# Gralloc workaround property
+vendor_public_prop(vendor_gralloc_prop)
