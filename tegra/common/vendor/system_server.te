@@ -149,3 +149,5 @@ dontaudit system_server system_server_tmpfs:file execute;
 
 dontaudit system_server vendor_firmware_gpu_file:dir r_dir_perms;
 dontaudit system_server vendor_firmware_gpu_file:file r_file_perms;
+
+dontaudit system_server debugfs:file rw_file_perms;
