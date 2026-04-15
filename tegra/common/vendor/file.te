@@ -160,6 +160,15 @@ type sysfs_slowscan, fs_type, sysfs_type;
 # /dev/ozwpan
 type ozmo_device, dev_type, mlstrustedobject;
 
+# /dev/hidg* (USB HID gadget devices)
+type hidg_device, dev_type;
+
+# /dev/ttyTHS1 (MStar scaler UART for Jamboard)
+type scaler_uart_device, dev_type;
+
+# /data/misc/scalerd/ (IPC for input source switching)
+type scalerd_data_file, file_type, data_file_type, mlstrustedobject;
+
 # /sys/kernel/pmic/...
 type sysfs_pmic, fs_type, sysfs_type;
 

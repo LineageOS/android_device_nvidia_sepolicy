@@ -72,4 +72,11 @@ auditallow platform_app cache_recovery_file:file create_file_perms;
 # GPU firmware
 allow platform_app vendor_firmware_gpu_file:dir search;
 
+# Write to scalerd IPC directory for input source switching
+allow platform_app scalerd_data_file:dir rw_dir_perms;
+allow platform_app scalerd_data_file:file create_file_perms;
+
+# Read scaler properties
+get_prop(platform_app, vendor_scaler_prop)
+
 dontaudit platform_app bootanim:fd use;

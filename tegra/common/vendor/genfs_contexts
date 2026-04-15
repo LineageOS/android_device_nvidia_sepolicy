@@ -33,3 +33,5 @@ genfscon sysfs /devices/pwm-fan/hwmon/hwmon0		u:object_r:sysfs_pwm_fan:s0
 genfscon sysfs /devices/pwm-fan/hwmon/hwmon             u:object_r:sysfs_pwm_fan:s0
 
 genfscon proc /sys/vm/legacy_va_layout			u:object_r:proc_legacy_va_layout:s0
+
+genfscon sysfs /devices/scaler-backlight/backlight/scaler	u:object_r:sysfs_class_backlight:s0

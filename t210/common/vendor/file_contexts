@@ -9,6 +9,9 @@
 # enable UART port permission
 /dev/ttyTHS3				u:object_r:hci_attach_dev:s0
 
+# MStar scaler UART (Jamboard input source detection)
+/dev/ttyTHS1				u:object_r:scaler_uart_device:s0
+
 # gps
 /dev/ttyTHS2				u:object_r:gps_device:s0
 # GPS on Jetson super module is connected to UART1

@@ -1,3 +1,4 @@
+/data/misc/scalerd(/.*)?	u:object_r:scalerd_data_file:s0
 /data/mfgtest(/.*)?		u:object_r:diag_data_file:s0
 /data/misc/bluedroid_log(/.*)?		u:object_r:bluetooth_log_file:s0
 /data/stats_share(/.*)?		u:object_r:stats_share_file:s0
@@ -35,6 +36,7 @@
 /dev/gpu_freq_max		u:object_r:pmqos_device:s0
 /dev/gpu_freq_min		u:object_r:pmqos_device:s0
 /dev/hidraw[0-9]		u:object_r:hidraw_device:s0
+/dev/hidg[0-9]			u:object_r:hidg_device:s0
 /dev/im501_pcm		u:object_r:im501_pcm_device:s0
 /dev/im501_spi		u:object_r:im501_spi_device:s0
 /dev/mipi-cal		u:object_r:camera_device:s0
