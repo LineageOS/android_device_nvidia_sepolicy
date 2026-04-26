@@ -2,3 +2,6 @@ type init_tegra, domain;
 type init_tegra_exec, file_type, exec_type, vendor_file_type;
 
 init_daemon_domain(init_tegra)
+
+# Device model
+set_prop(init_tegra, vendor_model_prop)
