@@ -5,3 +5,6 @@ init_daemon_domain(init_tegra)
 
 # Device model
 set_prop(init_tegra, vendor_model_prop)
+
+# A/B boot/gpt devices
+set_prop(init_tegra, vendor_ota_prop)

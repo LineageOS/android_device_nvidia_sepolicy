@@ -1,3 +1,6 @@
 # Device model
 persist.vendor.lineage.tegra.	u:object_r:vendor_model_prop:s0
 ro.vendor.lineage.tegra.	u:object_r:vendor_model_prop:s0
+
+# A/B boot/gpt devices
+vendor.tegra.ota.		u:object_r:vendor_ota_prop:s0

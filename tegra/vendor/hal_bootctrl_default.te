@@ -3,3 +3,10 @@ allow hal_bootctl_default bootloader_block_device:blk_file rw_file_perms;
 
 allow hal_bootctl_default sysfs_devices_block:dir search;
 allow hal_bootctl_default sysfs_devices_block:file rw_file_perms;
+
+get_prop(hal_bootctl_default, vendor_ota_prop)
+
+recovery_only(`
+  get_prop(fastbootd, vendor_ota_prop)
+  get_prop(recovery, vendor_ota_prop)
+')
