@@ -1,3 +1,6 @@
+# Boot control
+/(vendor|system/vendor)/bin/hw/android\.hardware\.boot-service\.nvidia		u:object_r:hal_bootctl_default_exec:s0
+
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service-nvidia		u:object_r:hal_light_default_exec:s0
 

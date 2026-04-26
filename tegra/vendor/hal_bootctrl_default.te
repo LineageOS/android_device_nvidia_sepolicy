@@ -1,0 +1,5 @@
+allow hal_bootctl_default block_device:dir search;
+allow hal_bootctl_default bootloader_block_device:blk_file rw_file_perms;
+
+allow hal_bootctl_default sysfs_devices_block:dir search;
+allow hal_bootctl_default sysfs_devices_block:file rw_file_perms;
