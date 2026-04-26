@@ -1,0 +1,2 @@
+allow init bootloader_block_device:lnk_file relabelto;
+allow init metadata_block_device:lnk_file relabelto;
