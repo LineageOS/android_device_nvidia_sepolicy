@@ -1,5 +1,6 @@
 type bootloader_block_device, dev_type;
 type rpmb_block_device, dev_type;
 
+type sysfs_board, sysfs_type, fs_type;
 type sysfs_efivar, fs_type, sysfs_type;
 type sysfs_power_supply, fs_type, sysfs_type;
