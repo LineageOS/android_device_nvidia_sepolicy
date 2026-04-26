@@ -8,3 +8,6 @@ set_prop(init_tegra, vendor_model_prop)
 
 # A/B boot/gpt devices
 set_prop(init_tegra, vendor_ota_prop)
+
+# USB vid/pid's
+set_prop(init_tegra, vendor_usb_prop)
