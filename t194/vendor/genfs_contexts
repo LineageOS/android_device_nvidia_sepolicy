@@ -1,0 +1,2 @@
+genfscon sysfs /devices/platform/bus@0/17000000.gpu		u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/bus@0/13e00000.host1x		u:object_r:sysfs_gpu:s0
