@@ -1,0 +1,6 @@
+allow postinstall block_device:dir search;
+allow postinstall bootloader_block_device:blk_file rw_file_perms;
+
+allowxperm postinstall bootloader_block_device:blk_file ioctl { BLKGETSIZE BLKPBSZGET HDIO_GETGEO };
+
+get_prop(postinstall, vendor_ota_prop)
