@@ -1,2 +1,3 @@
 persist.bluetooth.btsnoopsize	u:object_r:exported_bluetooth_prop:s0	exact
+bluetooth.btm.sec.delay_auth_ms.value u:object_r:bluetooth_config_prop:s0 exact int
 ro.rfkilldisabled		u:object_r:exported_bluetooth_prop:s0	exact string
