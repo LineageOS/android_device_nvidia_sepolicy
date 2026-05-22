@@ -16,6 +16,23 @@
       "message": "I tried a few more values, 38ms failed, but 50ms pairs every time. \n\nOther devices unaffected by this issue seem to pair just fine, have tested with various Sony Headphones and TV Remotes I have around. \n\nDelaying host-initiated auth is generally benign; peripherals wait on the host, they don\u0027t time out on it, so this is likely safe to land.",
       "revId": "2559b883cdd5bfcc7e899c0d9ddc084640706789",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5e21cd8_0b1a5e14",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-05-22T17:39:27Z",
+      "side": 1,
+      "message": "this belongs in system/sepolicy?",
+      "revId": "2559b883cdd5bfcc7e899c0d9ddc084640706789",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
