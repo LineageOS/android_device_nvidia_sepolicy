@@ -33,6 +33,24 @@
       "message": "this belongs in system/sepolicy?",
       "revId": "2559b883cdd5bfcc7e899c0d9ddc084640706789",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bf1de1d_92e12427",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37072
+      },
+      "writtenOn": "2026-05-22T19:43:25Z",
+      "side": 1,
+      "message": "Yeah, honestly I had it there originally - thought it\u0027d be preferred to scope it down but it doesn\u0027t make much sense here. Moving it 🫡",
+      "parentUuid": "e5e21cd8_0b1a5e14",
+      "revId": "2559b883cdd5bfcc7e899c0d9ddc084640706789",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
