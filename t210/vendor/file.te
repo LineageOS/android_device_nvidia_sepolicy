@@ -1,0 +1,2 @@
+type factorycalib_block_device, dev_type;
+type rpx_block_device, dev_type;
