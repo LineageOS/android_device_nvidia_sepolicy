@@ -1,0 +1,1 @@
+/system/lib/modules(/.*)?	u:object_r:system_dlkm_file:s0
