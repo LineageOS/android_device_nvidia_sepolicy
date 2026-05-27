@@ -14,4 +14,9 @@
 # limitations under the License.
 #
 
-# Nothing here yet
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/private
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/nvidia/sepolicy/$(TARGET_TEGRA_VERSION)/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/public
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/nvidia/sepolicy/$(TARGET_TEGRA_VERSION)/public
+BOARD_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/tegra/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += device/nvidia/sepolicy/$(TARGET_TEGRA_VERSION)/vendor
