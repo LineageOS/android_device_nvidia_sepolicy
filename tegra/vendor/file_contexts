@@ -1,2 +1,5 @@
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service-nvidia		u:object_r:hal_light_default_exec:s0
+
+# LKM
+/(vendor|system/vendor)/bin/lkm_loader\.sh	u:object_r:dlkm_loader_exec:s0
