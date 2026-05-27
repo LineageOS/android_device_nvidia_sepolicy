@@ -1,0 +1,2 @@
+allow dlkm_loader vendor_shell_exec:file rx_file_perms;
+allow dlkm_loader vendor_toolbox_exec:file rx_file_perms;
