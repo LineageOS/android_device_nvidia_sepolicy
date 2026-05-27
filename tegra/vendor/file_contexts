@@ -8,3 +8,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.optee		u:object_r:hal_gatekeeper_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.optee	u:object_r:hal_keymint_default_exec:s0
 /(vendor|system/vendor)/bin/tee-supplicant						u:object_r:tee_exec:s0
+
+# Vendor custom init
+/(vendor|system/vendor)/bin/init_tegra	u:object_r:init_tegra_exec:s0
